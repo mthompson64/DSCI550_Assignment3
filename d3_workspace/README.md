@@ -1,8 +1,9 @@
 # Instructions for d3 setup and installation
 1. For local download, download d3.zip from following link : 
--   [GitHub] https://www.tutorialspoint.com/d3js/d3js_installation.htm
+-   https://www.tutorialspoint.com/d3js/d3js_installation.htm
 2. For D3 Library from CDN, include link within the actual HTML code:
--  `<addr>` <!DOCTYPE html>
+-  
+`<addr>` <!DOCTYPE html>
 <html lang = "en">
    <head>
       <script src = "https://d3js.org/d3.v4.min.js"></script>

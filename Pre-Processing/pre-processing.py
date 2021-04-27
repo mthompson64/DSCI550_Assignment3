@@ -40,7 +40,7 @@ def clean_text(text):
     lemmatized_text = remove_words(lemmatized_text.split(), stopcorpus)
     lemmatized_text = collapse_list_to_string(lemmatized_text)
 
-    return lemmatized_text
+    return lemmatized_text.split()
 
 stopcorpus: typing.List = stopwords.words('english')
 w_tokenizer = nltk.tokenize.WhitespaceTokenizer()
@@ -55,6 +55,7 @@ with open('Q1/fraudulent_emails_v2.json') as f:
     data = json.load(f)
 
 text_data = []
+unemployment_data = {}
 
 for email in data:
     message_data = {}
@@ -75,16 +76,47 @@ for email in data:
             cleaned_caption = clean_text(caption)
 
             # Save processed caption text to dict
-            message_data['caption'].append(cleaned_caption)
+            message_data['caption'] = cleaned_caption
     except:
-        pass
+        continue
     
     text_data.append(message_data)
+
+    ## Extract Unemployment info
+
+    try:
+        unemployment = email['GlobalUnemployment']
+    except KeyError:
+        continue
+
+    # If unemployment data exists, then add it to a dictionary
+    if unemployment != []:
+        for i in unemployment:    # Unemployment is a list of dicts
+            for key, value in i.items():
+                
+                # Extract data from the dictionary
+                country = value['country']
+                year = str(value['year'])
+                unemployment = value[year + '_unemployment']
+
+                # Add the country and year to the dictionary with a frequency count for use in a heat map
+                if country in unemployment_data:
+                    unemployment_data[country]['freq'] += 1
+                    if year in unemployment_data[country]:
+                        unemployment_data[country][year]['freq'] += 1
+                    else:
+                        unemployment_data[country][year] = {'unemployment': unemployment, 'freq': 1}
+                else:
+                    unemployment_data[country] = {}
+                    unemployment_data[country]['freq'] = 1
+                    unemployment_data[country][year] = {'unemployment': unemployment, 'freq': 1}
+
         
+## Save data to json files
 
+with open('text.json', 'w') as text_out:
+    json.dump(text_data, text_out, indent=2)
 
-with open('text.json', 'w') as fout:
-    json.dump(text_data, fout, indent=2)
-
-
+with open('unemployment.json', 'w') as unemp_out:
+    json.dump(unemployment_data, unemp_out, indent=2)
 

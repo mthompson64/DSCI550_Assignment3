@@ -1,6 +1,6 @@
 {
   "Nigeria": {
-    "freq": 338,
+    "freq": 335,
     "2002": {
       "unemployment": 3.84999990463257,
       "freq": 19
@@ -17,17 +17,9 @@
       "unemployment": 3.84999990463257,
       "freq": 1
     },
-    "1980": {
-      "unemployment": NaN,
-      "freq": 2
-    },
     "2004": {
       "unemployment": 3.80999994277954,
       "freq": 87
-    },
-    "1990": {
-      "unemployment": NaN,
-      "freq": 1
     },
     "2005": {
       "unemployment": 3.76999998092651,
@@ -62,7 +54,7 @@
     }
   },
   "United States": {
-    "freq": 612,
+    "freq": 606,
     "2002": {
       "unemployment": 5.78000020980835,
       "freq": 16
@@ -79,10 +71,6 @@
       "unemployment": 4.21999979019165,
       "freq": 1
     },
-    "1980": {
-      "unemployment": NaN,
-      "freq": 5
-    },
     "2000": {
       "unemployment": 3.99000000953674,
       "freq": 1
@@ -90,10 +78,6 @@
     "2004": {
       "unemployment": 5.53000020980835,
       "freq": 146
-    },
-    "1990": {
-      "unemployment": NaN,
-      "freq": 1
     },
     "2005": {
       "unemployment": 5.07999992370605,

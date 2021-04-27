@@ -6,6 +6,7 @@ import typing
 nltk.download('stopwords')
 nltk.download('wordnet')
 from nltk.corpus import stopwords
+import math
 
 
 def remove_links(text):
@@ -78,7 +79,7 @@ for email in data:
             # Save processed caption text to dict
             message_data['caption'] = cleaned_caption
     except:
-        continue
+        pass
     
     text_data.append(message_data)
 
@@ -97,7 +98,10 @@ for email in data:
                 # Extract data from the dictionary
                 country = value['country']
                 year = str(value['year'])
-                unemployment = value[year + '_unemployment']
+                unemp_val = value[year + '_unemployment']
+
+                if math.isnan(unemp_val):
+                    continue
 
                 # Add the country and year to the dictionary with a frequency count for use in a heat map
                 if country in unemployment_data:
@@ -105,11 +109,11 @@ for email in data:
                     if year in unemployment_data[country]:
                         unemployment_data[country][year]['freq'] += 1
                     else:
-                        unemployment_data[country][year] = {'unemployment': unemployment, 'freq': 1}
+                        unemployment_data[country][year] = {'unemployment': unemp_val, 'freq': 1}
                 else:
                     unemployment_data[country] = {}
                     unemployment_data[country]['freq'] = 1
-                    unemployment_data[country][year] = {'unemployment': unemployment, 'freq': 1}
+                    unemployment_data[country][year] = {'unemployment': unemp_val, 'freq': 1}
 
         
 ## Save data to json files

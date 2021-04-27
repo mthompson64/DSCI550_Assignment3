@@ -24,27 +24,7 @@ def collapse_list_to_string(string_list):
     # This is to join back together the text data into a single string
     return ' '.join(string_list)
 
-
-stopcorpus: typing.List = stopwords.words('english')
-w_tokenizer = nltk.tokenize.WhitespaceTokenizer()
-lemmatizer = nltk.stem.WordNetLemmatizer()
-
-def lemmatize_text(text):
-    return [lemmatizer.lemmatize(w) for w in w_tokenizer.tokenize(text)]
-
-#######
-
-with open('Q1/fraudulent_emails_v3.json') as f:
-    data = json.load(f)
-
-emails = data['emails']
-
-text_data = []
-
-# First email is blank
-for email in emails[1:]:
-    text = email['X-TIKA:content']
-
+def clean_text(text):
     # Convert to lowercase, and remove stop words
     cleaned_text = remove_links(text)
     cleaned_text = re.sub(r'[^\w]', ' ', cleaned_text)
@@ -60,10 +40,51 @@ for email in emails[1:]:
     lemmatized_text = remove_words(lemmatized_text.split(), stopcorpus)
     lemmatized_text = collapse_list_to_string(lemmatized_text)
 
-    # Save processed text to text_data list
-    text_data.append(lemmatized_text)
+    return lemmatized_text
+
+stopcorpus: typing.List = stopwords.words('english')
+w_tokenizer = nltk.tokenize.WhitespaceTokenizer()
+lemmatizer = nltk.stem.WordNetLemmatizer()
+
+def lemmatize_text(text):
+    return [lemmatizer.lemmatize(w) for w in w_tokenizer.tokenize(text)]
+
+#######
+
+with open('Q1/fraudulent_emails_v2.json') as f:
+    data = json.load(f)
+
+text_data = []
+
+for email in data:
+    message_data = {}
+    message = email['X-TIKA:content']
+
+    # Clean and lemmatize message
+    cleaned_text = clean_text(message)
+
+    # Save processed message text to dict
+    message_data['message'] = cleaned_text
+
+    try:
+        captions = email['GPT2_gen_images']['Phish_Iris_image']['Image_caption']['captions']
+        message_data['caption'] = []
+        for i in captions:
+            caption = i['sentence']
+            # Clean and lemmatize caption
+            cleaned_caption = clean_text(caption)
+
+            # Save processed caption text to dict
+            message_data['caption'].append(cleaned_caption)
+    except:
+        pass
+    
+    text_data.append(message_data)
+        
+
 
 with open('text.json', 'w') as fout:
     json.dump(text_data, fout, indent=2)
+
 
 

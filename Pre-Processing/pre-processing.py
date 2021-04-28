@@ -52,7 +52,7 @@ def lemmatize_text(text):
 
 #######
 
-with open('Q1/fraudulent_emails_v2.json') as f:
+with open('fraudulent_emails_v2.json') as f:
     data = json.load(f)
 
 text_data = []
@@ -61,12 +61,14 @@ unemployment_data = {}
 for email in data:
     message_data = {}
     message = email['X-TIKA:content']
+    se_tag = email['se_tag']
 
     # Clean and lemmatize message
     cleaned_text = clean_text(message)
 
     # Save processed message text to dict
     message_data['message'] = cleaned_text
+    message_data['se_tag'] = se_tag
 
     try:
         captions = email['GPT2_gen_images']['Phish_Iris_image']['Image_caption']['captions']
@@ -97,23 +99,35 @@ for email in data:
                 
                 # Extract data from the dictionary
                 country = value['country']
-                year = str(value['year'])
-                unemp_val = value[year + '_unemployment']
+                year = value['year']
+                unemp_val = value[str(year) + '_unemployment']
 
+                # If the unemployment data is NaN, skip and move on
                 if math.isnan(unemp_val):
                     continue
 
                 # Add the country and year to the dictionary with a frequency count for use in a heat map
                 if country in unemployment_data:
                     unemployment_data[country]['freq'] += 1
+                    
+                    # Check if the year is in the dictionary and update count
                     if year in unemployment_data[country]:
                         unemployment_data[country][year]['freq'] += 1
                     else:
                         unemployment_data[country][year] = {'unemployment': unemp_val, 'freq': 1}
+                    
+                    # Check if the se_tag is in the dictionary and update count
+                    if se_tag in unemployment_data[country]['se']:
+                        unemployment_data[country]['se'][se_tag] += 1
+                    else:
+                        unemployment_data[country]['se'][se_tag] = 1
+
+                # If the country is not already in the dictionary, then add it
                 else:
                     unemployment_data[country] = {}
                     unemployment_data[country]['freq'] = 1
                     unemployment_data[country][year] = {'unemployment': unemp_val, 'freq': 1}
+                    unemployment_data[country]['se'] = {se_tag: 1}
 
         
 ## Save data to json files

@@ -5,6 +5,12 @@
       "unemployment": 3.84999990463257,
       "freq": 19
     },
+    "se": {
+      "social_engineering": 132,
+      "recon": 45,
+      "phishing": 148,
+      "malware": 10
+    },
     "2003": {
       "unemployment": 3.83999991416931,
       "freq": 88
@@ -40,6 +46,11 @@
       "unemployment": 5.26999998092651,
       "freq": 1
     },
+    "se": {
+      "social_engineering": 1,
+      "phishing": 8,
+      "recon": 1
+    },
     "2005": {
       "unemployment": 6.05000019073486,
       "freq": 2
@@ -58,6 +69,12 @@
     "2002": {
       "unemployment": 5.78000020980835,
       "freq": 16
+    },
+    "se": {
+      "social_engineering": 257,
+      "phishing": 269,
+      "recon": 66,
+      "malware": 14
     },
     "2001": {
       "unemployment": 4.73000001907349,
@@ -98,6 +115,11 @@
       "unemployment": 8.30000019073486,
       "freq": 1
     },
+    "se": {
+      "phishing": 28,
+      "recon": 4,
+      "social_engineering": 37
+    },
     "2003": {
       "unemployment": 7.34000015258789,
       "freq": 6
@@ -124,6 +146,12 @@
     "2002": {
       "unemployment": 4.48999977111816,
       "freq": 8
+    },
+    "se": {
+      "social_engineering": 99,
+      "phishing": 65,
+      "recon": 27,
+      "malware": 4
     },
     "2003": {
       "unemployment": 4.48999977111816,
@@ -152,6 +180,11 @@
       "unemployment": 2.54999995231628,
       "freq": 4
     },
+    "se": {
+      "social_engineering": 26,
+      "phishing": 24,
+      "recon": 3
+    },
     "2003": {
       "unemployment": 3.58999991416931,
       "freq": 30
@@ -179,6 +212,12 @@
       "unemployment": 33.2900009155273,
       "freq": 2
     },
+    "se": {
+      "recon": 57,
+      "phishing": 143,
+      "malware": 17,
+      "social_engineering": 208
+    },
     "2003": {
       "unemployment": 32.310001373291,
       "freq": 52
@@ -205,6 +244,12 @@
     "2002": {
       "unemployment": 3.88000011444092,
       "freq": 1
+    },
+    "se": {
+      "malware": 13,
+      "social_engineering": 56,
+      "recon": 23,
+      "phishing": 29
     },
     "2003": {
       "unemployment": 3.88000011444092,
@@ -237,6 +282,11 @@
       "unemployment": 8.3100004196167,
       "freq": 2
     },
+    "se": {
+      "social_engineering": 7,
+      "recon": 17,
+      "phishing": 2
+    },
     "2005": {
       "unemployment": 8.48999977111816,
       "freq": 6
@@ -256,6 +306,10 @@
       "unemployment": 3.52999997138977,
       "freq": 2
     },
+    "se": {
+      "phishing": 6,
+      "social_engineering": 1
+    },
     "2004": {
       "unemployment": 3.54999995231628,
       "freq": 4
@@ -270,6 +324,11 @@
     "2003": {
       "unemployment": 11.2799997329712,
       "freq": 3
+    },
+    "se": {
+      "social_engineering": 7,
+      "recon": 4,
+      "phishing": 14
     },
     "2004": {
       "unemployment": 11.0900001525879,
@@ -294,6 +353,11 @@
       "unemployment": 14.5,
       "freq": 2
     },
+    "se": {
+      "social_engineering": 1,
+      "malware": 1,
+      "phishing": 4
+    },
     "2006": {
       "unemployment": 14.0,
       "freq": 1
@@ -308,6 +372,12 @@
     "2003": {
       "unemployment": 9.77999973297119,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 10,
+      "recon": 8,
+      "phishing": 1,
+      "malware": 2
     },
     "2004": {
       "unemployment": 10.7299995422363,
@@ -332,6 +402,9 @@
       "unemployment": 10.2799997329712,
       "freq": 1
     },
+    "se": {
+      "social_engineering": 3
+    },
     "2006": {
       "unemployment": 8.17000007629395,
       "freq": 2
@@ -342,6 +415,12 @@
     "2003": {
       "unemployment": 4.71999979019165,
       "freq": 14
+    },
+    "se": {
+      "social_engineering": 59,
+      "phishing": 31,
+      "recon": 15,
+      "malware": 2
     },
     "2004": {
       "unemployment": 4.3899998664856,
@@ -366,6 +445,12 @@
       "unemployment": 3.45000004768372,
       "freq": 9
     },
+    "se": {
+      "social_engineering": 45,
+      "phishing": 15,
+      "recon": 6,
+      "malware": 2
+    },
     "2004": {
       "unemployment": 3.42000007629395,
       "freq": 23
@@ -389,6 +474,9 @@
       "unemployment": 13.5100002288818,
       "freq": 1
     },
+    "se": {
+      "social_engineering": 2
+    },
     "2006": {
       "unemployment": 10.710000038147,
       "freq": 1
@@ -399,6 +487,12 @@
     "2003": {
       "unemployment": 0.730000019073486,
       "freq": 6
+    },
+    "se": {
+      "social_engineering": 17,
+      "phishing": 17,
+      "recon": 5,
+      "malware": 1
     },
     "2004": {
       "unemployment": 0.769999980926514,
@@ -423,6 +517,12 @@
       "unemployment": 9.0600004196167,
       "freq": 5
     },
+    "se": {
+      "social_engineering": 31,
+      "phishing": 53,
+      "recon": 4,
+      "malware": 2
+    },
     "2004": {
       "unemployment": 9.01000022888184,
       "freq": 8
@@ -446,6 +546,11 @@
       "unemployment": 26.3899993896484,
       "freq": 4
     },
+    "se": {
+      "social_engineering": 15,
+      "phishing": 16,
+      "recon": 5
+    },
     "2004": {
       "unemployment": 26.9599990844727,
       "freq": 16
@@ -468,6 +573,11 @@
     "2000": {
       "unemployment": 2.9300000667572,
       "freq": 2
+    },
+    "se": {
+      "social_engineering": 19,
+      "recon": 2,
+      "phishing": 13
     },
     "2003": {
       "unemployment": 2.94000005722046,
@@ -500,6 +610,11 @@
       "unemployment": 4.59999990463257,
       "freq": 1
     },
+    "se": {
+      "social_engineering": 15,
+      "phishing": 11,
+      "recon": 4
+    },
     "2004": {
       "unemployment": 4.5,
       "freq": 10
@@ -523,6 +638,11 @@
       "unemployment": 2.32999992370605,
       "freq": 2
     },
+    "se": {
+      "social_engineering": 6,
+      "phishing": 4,
+      "recon": 1
+    },
     "2004": {
       "unemployment": 2.29999995231628,
       "freq": 3
@@ -542,6 +662,10 @@
       "unemployment": 6.1545871016693114,
       "freq": 5
     },
+    "se": {
+      "phishing": 4,
+      "social_engineering": 2
+    },
     "2006": {
       "unemployment": 4.797206562456963,
       "freq": 1
@@ -552,6 +676,11 @@
     "2003": {
       "unemployment": 4.11999988555908,
       "freq": 12
+    },
+    "se": {
+      "phishing": 24,
+      "social_engineering": 4,
+      "recon": 3
     },
     "2004": {
       "unemployment": 4.32000017166138,
@@ -576,6 +705,11 @@
       "unemployment": 3.59999990463257,
       "freq": 1
     },
+    "se": {
+      "phishing": 2,
+      "social_engineering": 3,
+      "recon": 2
+    },
     "2005": {
       "unemployment": 1.89999997615814,
       "freq": 2
@@ -590,6 +724,10 @@
     "2003": {
       "unemployment": 4.75,
       "freq": 1
+    },
+    "se": {
+      "phishing": 3,
+      "social_engineering": 7
     },
     "2004": {
       "unemployment": 4.01000022888184,
@@ -614,6 +752,11 @@
       "unemployment": 8.01000022888184,
       "freq": 1
     },
+    "se": {
+      "social_engineering": 4,
+      "recon": 3,
+      "phishing": 1
+    },
     "2006": {
       "unemployment": 8.61999988555908,
       "freq": 6
@@ -628,6 +771,12 @@
     "2003": {
       "unemployment": 15.4799995422363,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 16,
+      "phishing": 10,
+      "recon": 3,
+      "malware": 2
     },
     "2004": {
       "unemployment": 15.3999996185303,
@@ -652,6 +801,10 @@
       "unemployment": 5.92999982833862,
       "freq": 1
     },
+    "se": {
+      "recon": 2,
+      "social_engineering": 5
+    },
     "2004": {
       "unemployment": 5.40000009536743,
       "freq": 1
@@ -675,6 +828,12 @@
       "unemployment": 3.72000002861023,
       "freq": 3
     },
+    "se": {
+      "social_engineering": 8,
+      "phishing": 1,
+      "malware": 1,
+      "recon": 1
+    },
     "2004": {
       "unemployment": 3.79999995231628,
       "freq": 5
@@ -693,6 +852,12 @@
     "2003": {
       "unemployment": 5.76999998092651,
       "freq": 2
+    },
+    "se": {
+      "social_engineering": 18,
+      "phishing": 9,
+      "recon": 3,
+      "malware": 1
     },
     "2004": {
       "unemployment": 5.71999979019165,
@@ -717,6 +882,12 @@
       "unemployment": 2.71000003814697,
       "freq": 6
     },
+    "se": {
+      "recon": 5,
+      "phishing": 8,
+      "social_engineering": 6,
+      "malware": 2
+    },
     "2004": {
       "unemployment": 2.90000009536743,
       "freq": 3
@@ -736,6 +907,11 @@
       "unemployment": 4.6100001335144,
       "freq": 1
     },
+    "se": {
+      "malware": 1,
+      "phishing": 4,
+      "social_engineering": 1
+    },
     "2005": {
       "unemployment": 4.84000015258789,
       "freq": 2
@@ -751,6 +927,9 @@
       "unemployment": 14.5100002288818,
       "freq": 1
     },
+    "se": {
+      "social_engineering": 2
+    },
     "2006": {
       "unemployment": 12.5100002288818,
       "freq": 1
@@ -761,6 +940,11 @@
     "2003": {
       "unemployment": 13.7299995422363,
       "freq": 1
+    },
+    "se": {
+      "phishing": 6,
+      "social_engineering": 42,
+      "recon": 1
     },
     "2004": {
       "unemployment": 12.039999961853,
@@ -785,6 +969,10 @@
       "unemployment": 3.60999989509583,
       "freq": 1
     },
+    "se": {
+      "social_engineering": 13,
+      "phishing": 12
+    },
     "2005": {
       "unemployment": 3.52999997138977,
       "freq": 1
@@ -804,6 +992,10 @@
       "unemployment": 1.70000004768372,
       "freq": 3
     },
+    "se": {
+      "malware": 2,
+      "social_engineering": 5
+    },
     "2006": {
       "unemployment": 1.29999995231628,
       "freq": 4
@@ -814,6 +1006,9 @@
     "2004": {
       "unemployment": 5.19000005722046,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 1
     }
   },
   "Algeria": {
@@ -821,6 +1016,9 @@
     "2004": {
       "unemployment": 17.6499996185303,
       "freq": 2
+    },
+    "se": {
+      "social_engineering": 3
     },
     "2006": {
       "unemployment": 12.2700004577637,
@@ -832,6 +1030,12 @@
     "2004": {
       "unemployment": 4.48999977111816,
       "freq": 14
+    },
+    "se": {
+      "social_engineering": 40,
+      "recon": 14,
+      "phishing": 29,
+      "malware": 3
     },
     "2005": {
       "unemployment": 4.34000015258789,
@@ -852,6 +1056,10 @@
       "unemployment": 31.7700004577637,
       "freq": 14
     },
+    "se": {
+      "social_engineering": 10,
+      "phishing": 12
+    },
     "2005": {
       "unemployment": 30.7800006866455,
       "freq": 2
@@ -870,6 +1078,9 @@
     "2004": {
       "unemployment": 13.0600004196167,
       "freq": 1
+    },
+    "se": {
+      "recon": 1
     }
   },
   "Jamaica": {
@@ -877,6 +1088,9 @@
     "2004": {
       "unemployment": 11.4399995803833,
       "freq": 3
+    },
+    "se": {
+      "phishing": 4
     },
     "2005": {
       "unemployment": 11.2600002288818,
@@ -888,6 +1102,12 @@
     "2004": {
       "unemployment": 7.76000022888184,
       "freq": 9
+    },
+    "se": {
+      "social_engineering": 22,
+      "recon": 7,
+      "phishing": 8,
+      "malware": 1
     },
     "2005": {
       "unemployment": 7.11999988555908,
@@ -907,6 +1127,12 @@
     "2004": {
       "unemployment": 7.78999996185303,
       "freq": 6
+    },
+    "se": {
+      "phishing": 9,
+      "social_engineering": 54,
+      "recon": 3,
+      "malware": 1
     },
     "1998": {
       "unemployment": 5.63000011444092,
@@ -934,6 +1160,9 @@
     "2004": {
       "unemployment": 6.69000005722046,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 1
     }
   },
   "Singapore": {
@@ -941,6 +1170,10 @@
     "2004": {
       "unemployment": 5.84000015258789,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 1,
+      "phishing": 7
     },
     "2005": {
       "unemployment": 5.59000015258789,
@@ -956,6 +1189,12 @@
     "2004": {
       "unemployment": 1.50999999046326,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 25,
+      "malware": 1,
+      "phishing": 38,
+      "recon": 5
     },
     "2005": {
       "unemployment": 1.35000002384186,
@@ -976,6 +1215,9 @@
       "unemployment": 10.3100004196167,
       "freq": 1
     },
+    "se": {
+      "social_engineering": 2
+    },
     "2006": {
       "unemployment": 11.0100002288818,
       "freq": 1
@@ -986,6 +1228,11 @@
     "2005": {
       "unemployment": 7.94999980926514,
       "freq": 2
+    },
+    "se": {
+      "social_engineering": 4,
+      "phishing": 5,
+      "recon": 1
     },
     "2006": {
       "unemployment": 7.55000019073486,
@@ -1001,6 +1248,9 @@
     "2005": {
       "unemployment": 7.17000007629395,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 1
     }
   },
   "Solomon Islands": {
@@ -1008,6 +1258,9 @@
     "2005": {
       "unemployment": 2.04999995231628,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 1
     }
   },
   "Dominican Republic": {
@@ -1015,6 +1268,9 @@
     "2005": {
       "unemployment": 6.59000015258789,
       "freq": 2
+    },
+    "se": {
+      "phishing": 2
     }
   },
   "Rwanda": {
@@ -1022,6 +1278,10 @@
     "2005": {
       "unemployment": 0.930000007152557,
       "freq": 2
+    },
+    "se": {
+      "social_engineering": 1,
+      "recon": 1
     }
   },
   "Mexico": {
@@ -1029,6 +1289,9 @@
     "2005": {
       "unemployment": 3.55999994277954,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 2
     },
     "2006": {
       "unemployment": 3.5699999332428,
@@ -1040,6 +1303,9 @@
     "2005": {
       "unemployment": 15.8999996185303,
       "freq": 1
+    },
+    "se": {
+      "phishing": 1
     }
   },
   "Togo": {
@@ -1047,6 +1313,9 @@
     "2005": {
       "unemployment": 4.3600001335144,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 1
     }
   },
   "Norway": {
@@ -1054,6 +1323,10 @@
     "2005": {
       "unemployment": 4.38000011444092,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 9,
+      "phishing": 1
     },
     "2006": {
       "unemployment": 3.40000009536743,
@@ -1070,6 +1343,11 @@
       "unemployment": 6.76000022888184,
       "freq": 5
     },
+    "se": {
+      "phishing": 7,
+      "social_engineering": 2,
+      "recon": 1
+    },
     "2006": {
       "unemployment": 6.32000017166138,
       "freq": 2
@@ -1084,6 +1362,9 @@
     "2005": {
       "unemployment": 11.0100002288818,
       "freq": 1
+    },
+    "se": {
+      "recon": 1
     }
   },
   "Portugal": {
@@ -1091,6 +1372,9 @@
     "2005": {
       "unemployment": 7.57999992370605,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 3
     },
     "2007": {
       "unemployment": 7.96000003814697,
@@ -1103,6 +1387,9 @@
       "unemployment": 21.9799995422363,
       "freq": 1
     },
+    "se": {
+      "social_engineering": 2
+    },
     "2006": {
       "unemployment": 21.7600002288818,
       "freq": 1
@@ -1114,6 +1401,9 @@
       "unemployment": 31.1100006103516,
       "freq": 7
     },
+    "se": {
+      "social_engineering": 8
+    },
     "2007": {
       "unemployment": 28.9799995422363,
       "freq": 1
@@ -1124,6 +1414,10 @@
     "2006": {
       "unemployment": 10.7200002670288,
       "freq": 2
+    },
+    "se": {
+      "social_engineering": 1,
+      "recon": 1
     }
   },
   "Japan": {
@@ -1131,6 +1425,9 @@
     "2006": {
       "unemployment": 4.09999990463257,
       "freq": 2
+    },
+    "se": {
+      "social_engineering": 5
     },
     "2007": {
       "unemployment": 3.90000009536743,
@@ -1142,6 +1439,9 @@
     "2006": {
       "unemployment": 18.7999992370605,
       "freq": 4
+    },
+    "se": {
+      "social_engineering": 4
     }
   },
   "Ethiopia": {
@@ -1149,6 +1449,9 @@
     "2006": {
       "unemployment": 2.39000010490417,
       "freq": 1
+    },
+    "se": {
+      "recon": 1
     }
   },
   "El Salvador": {
@@ -1156,6 +1459,9 @@
     "2006": {
       "unemployment": 6.57000017166138,
       "freq": 2
+    },
+    "se": {
+      "phishing": 3
     },
     "2007": {
       "unemployment": 6.40999984741211,
@@ -1167,6 +1473,11 @@
     "2006": {
       "unemployment": 8.26000022888184,
       "freq": 4
+    },
+    "se": {
+      "social_engineering": 1,
+      "phishing": 2,
+      "recon": 1
     }
   },
   "Paraguay": {
@@ -1174,6 +1485,10 @@
     "2006": {
       "unemployment": 5.28000020980835,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 1,
+      "phishing": 1
     },
     "2007": {
       "unemployment": 4.71000003814697,
@@ -1185,6 +1500,9 @@
     "2006": {
       "unemployment": 6.30999994277954,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 1
     }
   },
   "Chile": {
@@ -1192,6 +1510,9 @@
     "2006": {
       "unemployment": 9.02000045776367,
       "freq": 1
+    },
+    "se": {
+      "phishing": 1
     }
   },
   "Burkina Faso": {
@@ -1199,6 +1520,9 @@
     "2006": {
       "unemployment": 3.64000010490417,
       "freq": 1
+    },
+    "se": {
+      "phishing": 1
     }
   },
   "Pakistan": {
@@ -1206,6 +1530,9 @@
     "2006": {
       "unemployment": 0.579999983310699,
       "freq": 2
+    },
+    "se": {
+      "social_engineering": 2
     }
   },
   "Guam": {
@@ -1213,6 +1540,9 @@
     "2007": {
       "unemployment": 8.30000019073486,
       "freq": 1
+    },
+    "se": {
+      "phishing": 1
     }
   },
   "Sri Lanka": {
@@ -1220,6 +1550,9 @@
     "2007": {
       "unemployment": 5.96999979019165,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 1
     }
   },
   "Georgia": {
@@ -1227,6 +1560,9 @@
     "2007": {
       "unemployment": 13.2799997329712,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 1
     }
   },
   "Brazil": {
@@ -1234,6 +1570,9 @@
     "2007": {
       "unemployment": 8.32999992370605,
       "freq": 1
+    },
+    "se": {
+      "social_engineering": 1
     }
   }
 }

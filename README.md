@@ -13,7 +13,7 @@ questions from Assignment 1 and Assignment 2 that you answered in your reports
 and how the D3 visualizations will help you answer them.
    - [X] Develop scripts for summarizing and preparing your TSV datasets for D3
 JSON conversion.
-   - [ ] The scripts you write are part of your delivery for the assignment. Please
+   - [X] The scripts you write are part of your delivery for the assignment. Please
 provide documentation for each script that you create in order to visualize
 the data using D3. Make sure that your scripts are portable and there are a
 simple set of instructions on how to run them. Any libraries that the scripts

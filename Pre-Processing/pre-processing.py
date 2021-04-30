@@ -8,6 +8,13 @@ nltk.download('wordnet')
 from nltk.corpus import stopwords
 import math
 
+def is_english(s):
+    try:
+        s.encode(encoding='utf-8').decode('ascii')
+    except UnicodeDecodeError:
+        return False
+    else:
+        return True
 
 def remove_links(text):
     # Remove any hyperlinks that may be in the text starting with http
@@ -39,9 +46,14 @@ def clean_text(text):
     lemmatized_text = lemmatize_text(cleaned_text)
     lemmatized_text = collapse_list_to_string(lemmatized_text)
     lemmatized_text = remove_words(lemmatized_text.split(), stopcorpus)
-    lemmatized_text = collapse_list_to_string(lemmatized_text)
+    
+    final_word_list = []
+    
+    for word in lemmatized_text:
+        if len(word) > 2 and is_english(word):
+            final_word_list.append(word)
 
-    return lemmatized_text.split()
+    return final_word_list
 
 stopcorpus: typing.List = stopwords.words('english')
 w_tokenizer = nltk.tokenize.WhitespaceTokenizer()
@@ -57,11 +69,16 @@ with open('fraudulent_emails_v2.json') as f:
 
 text_data = []
 unemployment_data = {}
+attacker_titles = {}
 
 for email in data:
     message_data = {}
     message = email['X-TIKA:content']
     se_tag = email['se_tag']
+    try:
+        titles = email['author_titles']
+    except KeyError:
+        titles = []
 
     # Clean and lemmatize message
     cleaned_text = clean_text(message)
@@ -128,13 +145,61 @@ for email in data:
                     unemployment_data[country]['freq'] = 1
                     unemployment_data[country][year] = {'unemployment': unemp_val, 'freq': 1}
                     unemployment_data[country]['se'] = {se_tag: 1}
+    
+    for title in titles:
+        if title in attacker_titles:
+            attacker_titles[title] += 1
+        else:
+            attacker_titles[title] = 1
 
-        
+# Save the attacker titles in a specific json format for uploading into d3
+attackers_to_json = {}
+i = 1
+for key, value in attacker_titles.items():
+    attackers_to_json['attacker_' + str(i)] = {'title': key, 'value': value}
+    i += 1
+
+# Save the word frequencies in a specific json format for uploading into d3
+new_text = {'caption': {}, 'reply': {}, 'social_engineering': {}, 'recon': {}, 'phishing': {}, 'malware': {}}
+for i in text_data:
+    try:
+        message = i['message']
+    except KeyError:
+        message = []
+    
+    try:
+        caption = i['caption']
+    except KeyError:
+        caption = []
+    
+    se_tag = i['se_tag']
+    
+    for word in message:
+        if word in new_text[se_tag]:
+            new_text[se_tag][word] += 1
+        else:
+            new_text[se_tag][word] = 1
+    
+    for word in caption:
+        if word in new_text['caption']:
+            new_text['caption'][word] += 1
+        else:
+            new_text['caption'][word] = 1
+
+text_out_json = {'unique_keywords': []}
+for key, value in new_text.items():    # key is se_tag
+    sort_dict= list(sorted(value.items(), key=lambda item: item[1], reverse=True))
+    for i in sort_dict[:50]:
+        text_out_json['unique_keywords'].append({'word': i[0], 'se_tag': key, 'freq': i[1]})
+
+
 ## Save data to json files
 
-with open('text.json', 'w') as text_out:
-    json.dump(text_data, text_out, indent=2)
+with open('filtered_keywords.json', 'w') as text_out:
+    json.dump(text_out_json, text_out, indent=2)
 
 with open('unemployment.json', 'w') as unemp_out:
     json.dump(unemployment_data, unemp_out, indent=2)
 
+with open('titles.json', 'w') as titles_out:
+    json.dump(attackers_to_json, titles_out, indent=2)

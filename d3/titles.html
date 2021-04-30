@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <h1>Frequently Used Attacker Titles</h1> 
+    <h4>A circular barplot to display the most frequently used titles by attackers in the fraudulent email corpus.</h4>
+
     <div id="graph"></div>
     <script>
         var margin = {
@@ -57,11 +60,11 @@
 
             // add bars based on values and arc variable
             svg.append("g")
-                .selectAll("patch")
+                .selectAll("path")
                 .data(data)
                 .enter().append("path")
-                .attr('fill', '#BBBE64')
-                .attr("d", arc);
+                    .attr("fill", "#99ccff")
+                    .attr("d", arc);
 
             // add labels
             // text is positioned at each bar horizontally in the middle
@@ -76,7 +79,7 @@
                 })
                 .append("text")
                 .text(function(d) {
-                    return (d.title)
+                    return (d.title + " - " + d.value)
                 })
                 .attr("transform", function(d) {
                     return (x(d.title) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)";

@@ -27,6 +27,9 @@
 </head>
 
 <body>
+    <h1>Heatmap of Email "Sent" Time Signatures</h1> 
+    <h4>A heatmap comparing the most popular times for attackers to send emails, broken down by day of the week and time of day.</h4>
+    <h5>The darker the square, the higher frequency of emails sent during that time period.</h5>
     <div id="chart"></div>
     <div id="legend"></div>
     <script>
@@ -41,7 +44,7 @@
             gridSize = Math.floor(width / 24),
             legendElementWidth = gridSize * 5,
             days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-            times = ["1a.m", "2a.m", "3a.m", "4a.m", "5a.m", "6a.m", "7a.m", "8a.m", "9a.m", "10a.m", "11a.m", "12p.m", "1p.m", "2p.m", "3p.m", "4p.m", "5p.m", "6p.m", "7p.m", "8p.m", "9p.m", "10p.m", "11p.m", "12a.m"];
+            times = ["1AM", "2AM", "3AM", "4AM", "5AM", "6AM", "7AM", "8AM", "9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM", "7PM", "8PM", "9PM", "10PM", "11PM", "12PM"];
 
         var svg = d3.select("#chart").append("svg")
             .attr("width", width + margin.left + margin.right)
@@ -92,7 +95,7 @@
                 .domain([0, d3.max(json_values, function(d) {
                     return d.freq;
                 })])
-                .range(["white", "red"]);
+                .range(["white", "orangered"]);
 
 
             var cards = svg.selectAll(".hour")

@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+import numpy as np
 import re
 import nltk
 import typing
@@ -64,14 +65,16 @@ def lemmatize_text(text):
 
 #######
 
-with open('fraudulent_emails_v2.json') as f:
+with open('data/fraudulent_emails_v2.json') as f:
     data = json.load(f)
 
 text_data = []
 unemployment_data = {}
 attacker_titles = {}
+years = []
 
 for email in data:
+    email['MboxParser-mime-version'] = "1.0"
     message_data = {}
     message = email['X-TIKA:content']
     se_tag = email['se_tag']
@@ -123,6 +126,10 @@ for email in data:
                 if math.isnan(unemp_val):
                     continue
 
+                # Add year to year list
+                if year not in years:
+                    years.append(year)
+                
                 # Add the country and year to the dictionary with a frequency count for use in a heat map
                 if country in unemployment_data:
                     unemployment_data[country]['freq'] += 1
@@ -151,7 +158,6 @@ for email in data:
             attacker_titles[title] += 1
         else:
             attacker_titles[title] = 1
-
 # Save the attacker titles in a specific json format for uploading into d3
 attackers_to_json = {}
 i = 1
@@ -192,14 +198,50 @@ for key, value in new_text.items():    # key is se_tag
     for i in sort_dict[:50]:
         text_out_json['unique_keywords'].append({'word': i[0], 'se_tag': key, 'freq': i[1]})
 
+col = ['country_name']
+years.sort()
+for year in years:
+    if year > 2002:
+        col.append(year)
 
-## Save data to json files
+# Save unemployment data in a tsv format for uploading into d3
+df = pd.DataFrame(columns = col)
+for country, data_dict in unemployment_data.items():
+    to_append = {'country_name': country}
+    for key, value in data_dict.items():
+        try:
+            year = int(key)
+        except:
+            continue
+        if year > 2002:
+            to_append[year] = value['unemployment']
+    df = df.append(to_append, ignore_index = True)
+    df = df.replace(r'', np.nan, regex=True)
+    df = df.head(51)
 
-with open('filtered_keywords.json', 'w') as text_out:
+# Save tika-similarity data to csv for d3
+input_cosine = pd.read_csv('Data/cosine_orig.csv')
+input_edit = pd.read_csv('Data/edit_orig.csv')
+input_jaccard = pd.read_csv('Data/jaccard_orig.csv')
+
+cosine = input_cosine[['Similarity_score']]
+edit = input_edit[['Similarity_score']]
+jaccard = input_jaccard[['Similarity_score']]
+
+## Save data to json and csv/tsv files
+
+with open('data/fraudulent_emails_v3.json', 'w') as file_out:
+    json.dump(data, file_out, indent=2)
+
+with open('data/filtered_keywords.json', 'w') as text_out:
     json.dump(text_out_json, text_out, indent=2)
 
-with open('unemployment.json', 'w') as unemp_out:
-    json.dump(unemployment_data, unemp_out, indent=2)
-
-with open('titles.json', 'w') as titles_out:
+with open('data/titles_final.json', 'w') as titles_out:
     json.dump(attackers_to_json, titles_out, indent=2)
+
+df.to_csv('data/unemployment_final.tsv', sep='\t')
+
+# Slim down the cosine, edit, and jaccard csv files for input into D3
+cosine.to_csv('data/cosine.csv')
+edit.to_csv('data/edit.csv')
+jaccard.to_csv('data/jaccard.csv')

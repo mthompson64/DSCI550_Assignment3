@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    rect.bordered {
+        stroke: #E6E6E6;
+        stroke-width: 4px;
+    }
+    
+    text.mono {
+        font-size: 10pt;
+        font-family: Consolas, courier;
+        fill: #aaa;
+    }
+    
+    text.axis-work {
+        fill: #000;
+    }
+</style>
+
+<head>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>
+
+
+</head>
+
+<body>
+    <div id="chart"></div>
+    <div id="legend"></div>
+    <script>
+        var margin = {
+                top: 100,
+                right: 0,
+                bottom: 100,
+                left: 50
+            },
+            width = 1200 - margin.left - margin.right,
+            height = 430 - margin.top - margin.bottom,
+            gridSize = Math.floor(width / 24),
+            legendElementWidth = gridSize * 5,
+            days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+            times = ["1a.m", "2a.m", "3a.m", "4a.m", "5a.m", "6a.m", "7a.m", "8a.m", "9a.m", "10a.m", "11a.m", "12p.m", "1p.m", "2p.m", "3p.m", "4p.m", "5p.m", "6p.m", "7p.m", "8p.m", "9p.m", "10p.m", "11p.m", "12a.m"];
+
+        var svg = d3.select("#chart").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var dayLabels = svg.selectAll(".dayLabel")
+            .data(days)
+            .enter().append("text")
+            .text(function(d) {
+                return d;
+            })
+            .attr("x", 0)
+            .attr("y", function(d, i) {
+                return i * gridSize;
+            })
+            .style("text-anchor", "end")
+            .attr("transform", "translate(-6," + gridSize / 1.5 + ")")
+            .attr("class", function(d, i) {
+                return ((i >= 0 && i <= 4) ? "dayLabel mono axis axis-work" : "dayLabel mono axis");
+            });
+
+        var timeLabels = svg.selectAll(".timeLabel")
+            .data(times)
+            .enter().append("text")
+            .text(function(d) {
+                return d;
+            })
+            .attr("x", function(d, i) {
+                return i * gridSize;
+            })
+            .attr("y", 0)
+            .style("text-anchor", "middle")
+            .attr("transform", "translate(" + gridSize / 2 + ", -6)")
+            .attr("class", function(d, i) {
+                return ((i >= 7 && i <= 16) ? "timeLabel mono axis axis-work" : "timeLabel mono axis");
+            });
+
+
+        d3.json("data/final_day_hour.json", function(error, json) {
+            if (error) return console.warn(error);
+            console.log(json);
+
+            var json_values = d3.values(json)
+
+            var colorScale = d3.scaleLinear()
+                .domain([0, d3.max(json_values, function(d) {
+                    return d.freq;
+                })])
+                .range(["white", "red"]);
+
+
+            var cards = svg.selectAll(".hour")
+                .data(json_values, function(d) {
+                    return d.day_value + ':' + d.time;
+                });
+
+            cards.enter().append("rect").data(json_values)
+                .attr("x", function(d) {
+                    return (d.time) * gridSize;
+                })
+                .attr("y", function(d) {
+                    return (d.day_value - 1) * gridSize;
+                })
+                .attr("rx", 4)
+                .attr("ry", 4)
+                .attr("class", "hour bordered")
+                .attr("width", gridSize)
+                .attr("height", gridSize)
+                .style("fill", function(d) {
+                    return colorScale(d.freq);
+                });
+
+
+
+        });
+    </script>
+</body>
+
+</html>

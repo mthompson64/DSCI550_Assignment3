@@ -65,7 +65,7 @@ def lemmatize_text(text):
 
 #######
 
-with open('data/fraudulent_emails_v2.json') as f:
+with open('fraudulent_emails_v2.json') as f:
     data = json.load(f)
 
 text_data = []
@@ -230,18 +230,18 @@ jaccard = input_jaccard[['Similarity_score']]
 
 ## Save data to json and csv/tsv files
 
-with open('data/fraudulent_emails_v3.json', 'w') as file_out:
+with open('../Q2/data/fraudulent_emails_v3.json', 'w') as file_out:
     json.dump(data, file_out, indent=2)
 
-with open('data/filtered_keywords.json', 'w') as text_out:
+with open('../Q2/data/filtered_keywords.json', 'w') as text_out:
     json.dump(text_out_json, text_out, indent=2)
 
-with open('data/titles_final.json', 'w') as titles_out:
+with open('../Q2/data/titles_final.json', 'w') as titles_out:
     json.dump(attackers_to_json, titles_out, indent=2)
 
-df.to_csv('data/unemployment_final.tsv', sep='\t')
+df.to_csv('../Q2/data/unemployment_final.tsv', sep='\t')
 
 # Slim down the cosine, edit, and jaccard csv files for input into D3
-cosine.to_csv('data/cosine.csv')
-edit.to_csv('data/edit.csv')
-jaccard.to_csv('data/jaccard.csv')
+cosine.to_csv('../Q2/data/cosine.csv')
+edit.to_csv('../Q2/data/edit.csv')
+jaccard.to_csv('../Q2/data/jaccard.csv')

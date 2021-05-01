@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-  .countries {
-    fill: none;
-    stroke: #fff;
-    stroke-linejoin: round;
-  }
-  .legendThreshold {
-      font-size: 16px;
-      font-family: sans-serif;
-      text-anchor: start
-  }
-  .caption {
-      fill: #000;
-      text-anchor: start;
-      font-weight: bold;
-  }
+    .countries {
+        fill: none;
+        stroke: #fff;
+        stroke-linejoin: round;
+    }
+    
+    .legendThreshold {
+        font-size: 18px;
+        font-family: sans-serif;
+        text-anchor: start
+    }
+    
+    .caption {
+        fill: #000;
+        text-anchor: start;
+        font-weight: bold;
+    }
 </style>
 <!--/* original examples/inspirations: 
     1. https://observablehq.com/@d3/bubble-chart
     2. https://www.webtips.dev/how-to-make-interactive-bubble-charts-in-d3-js  */-->
-    <head>
 
-        <script src="https://d3js.org/d3.v4.js"></script>
-        <script src="https://d3js.org/d3-hierarchy.v2.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>        
+<head>
 
-    </head>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-hierarchy.v2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>
+
+</head>
+
 <body>
-     <!--/* titles, description, text, etc... in HTML  */-->
-    <h1>Bubble Chart for Content by SE Type</h1> 
+    <!--/* titles, description, text, etc... in HTML  */-->
+    <h1>Bubble Chart for Content by SE Type</h1>
     <h4>A bubble chart to display the most frequent words in the fraudulent email contents. Words are separated by the social engineering tags we identified in task one.</h4>
-    
+
     <!--/* define div container to hold the bubble chart */-->
     <div id="bubbles"></div>
 
     <script>
         // dynamic to fit the window size
-        var width = window.innerWidth, height = innerHeight;
+        var width = window.innerWidth,
+            height = innerHeight;
 
         var svg = d3.select("#bubbles").append("svg")
-            .attr("viewBox", [0, 0, width +500, height - 20])
+            .attr("viewBox", [0, 0, width + 500, height - 20])
             .attr("font-size", 15)
             .attr("font-family", "Coda")
             .attr("text-anchor", "middle");
@@ -55,18 +60,21 @@
             console.log(data); // we only want the dictionaries inside the main key 'unique keywords'
 
             // since it is a small list of se_tags, manually assign colors for each tag
-            var color = {recon: '#ffc3a0', 
-                        social_engineering: '#40e0d0', 
-                        phishing: '#ffb6c1',
-                        malware: '#fff68f',
-                        reply: '#c6e2ff',
-                        caption: '#c3a0ff'
-                        };
+            var color = {
+                recon: '#ffc3a0',
+                social_engineering: '#40e0d0',
+                phishing: '#ffb6c1',
+                malware: '#fff68f',
+                reply: '#c6e2ff',
+                caption: '#c3a0ff'
+            };
 
             // use d3 hierachy and pack to size the bubbles in the last node call below
             var bubble = data => d3.pack()
-                .size([width-2, height-2])
-                .padding(2)(d3.hierarchy({ children: data }).sum(d => d.freq)); // pull freq values from children of hierarchy
+                .size([width - 2, height - 2])
+                .padding(2)(d3.hierarchy({
+                    children: data
+                }).sum(d => d.freq)); // pull freq values from children of hierarchy
 
             var root = bubble(data); // root is a function of the pack + hierachy
 
@@ -74,49 +82,49 @@
                 .data(root.children)
                 .enter().append('g')
                 .attr('transform', d => `translate(${d.x +1}, ${d.y+1})`);
-    
+
             var circle = node.append('circle')
-                .attr('r', d => d.r)    // d.r returns the radius according to the data element
+                .attr('r', d => d.r) // d.r returns the radius according to the data element
                 .attr("fill-opacity", 0.7)
-                .style('fill', d => color[d.data.se_tag]);  // fill in the bubbles based on se_tags
+                .style('fill', d => color[d.data.se_tag]); // fill in the bubbles based on se_tags
 
             // defined labels for each bubbles and output the bubble chart
             node.append('text')
                 .attr('dy', 2)
                 .text(d => d.data.word.substring(0, d.r / 2));
 
-           
-        // Legend
-        var g = svg.append("g")
-            .attr("class", "legendThreshold")
-            .attr("transform", "translate(20,50)");
 
-        g.append("text")
-            .attr("class", "caption")
-            .attr("x", 0)
-            .attr("y", -5)
-            .text("Social Engineering Tags");
-        
-        var labels = ['recon', 'social_engineering', ' phishing', 'malware', 'reply', 'caption'];
-        var colorScheme = ['#ffc3a0','#40e0d0','#ffb6c1', '#fff68f','#c6e2ff','#c3a0ff' ];
-        var colorScale = d3.scaleThreshold()
-            .domain(labels)
-            .range(colorScheme);
+            // Legend
+            var g = svg.append("g")
+                .attr("class", "legendThreshold")
+                .attr("transform", "translate(20,50)");
+
+            g.append("text")
+                .attr("class", "caption")
+                .attr("x", 0)
+                .attr("y", -5)
+                .text("Social Engineering Tags");
+
+            var labels = ['recon', 'social_engineering', ' phishing', 'malware', 'reply', 'caption'];
+            var colorScheme = ['#ffc3a0', '#40e0d0', '#ffb6c1', '#fff68f', '#c6e2ff', '#c3a0ff'];
+            var colorScale = d3.scaleThreshold()
+                .domain(labels)
+                .range(colorScheme);
 
 
-        var legend = d3.legendColor()
-            .labels(function (d) { return labels[d.i]; })
-            .shapePadding(5)
-            .scale(colorScale);
+            var legend = d3.legendColor()
+                .labels(function(d) {
+                    return labels[d.i];
+                })
+                .shapePadding(5)
+                .scale(colorScale);
 
-        svg.select(".legendThreshold")
-            .call(legend);
-    
+            svg.select(".legendThreshold")
+                .call(legend);
+
 
         });
-    
+    </script>
+</body>
 
-
-        </script>
-    </body>
 </html>

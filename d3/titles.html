@@ -9,22 +9,27 @@
 </head>
 
 <body>
-    <h1>Frequently Used Attacker Titles</h1> 
+    <h1>Frequently Used Attacker Titles</h1>
     <h4>A circular barplot to display the most frequently used titles by attackers in the fraudulent email corpus.</h4>
 
     <div id="graph"></div>
     <script>
-        var margin = {top: 10, right: 30, bottom: 30, left: 40},
-            width = 1000 - margin.left - margin.right,
-            height = 650 - margin.top - margin.bottom,
-            innerRadius = 100,
+        var margin = {
+                top: 0,
+                right: 30,
+                bottom: 30,
+                left: 40
+            },
+            width = 800 - margin.left - margin.right,
+            height = 450 - margin.top - margin.bottom,
+            innerRadius = 90,
             outerRadius = Math.min(width, height) / 2;
 
         var svg = d3.select("#graph").append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
             .append("g")
-            .attr("transform", "translate(" + width / 2 + "," + (height / 2 + 100) + ")"); // Add 100 on Y translation, cause upper bars are longer
+            .attr("transform", "translate(" + width / 2 + "," + (height / 2 + 80) + ")"); // Add 100 on Y translation, cause upper bars are longer
 
 
         // main code under the local json file data
@@ -58,8 +63,8 @@
                 .selectAll("path")
                 .data(data)
                 .enter().append("path")
-                    .attr("fill", "#99ccff")
-                    .attr("d", arc);
+                .attr("fill", "#99ccff")
+                .attr("d", arc);
 
             // add labels
             // text is positioned at each bar horizontally in the middle
@@ -80,6 +85,7 @@
                     return (x(d.title) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)";
                 })
                 .style("font-size", "14px")
+                .style("font-weight", "700")
                 .attr("alignment-baseline", "middle");
 
         });

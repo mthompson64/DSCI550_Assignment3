@@ -27,14 +27,14 @@
 </head>
 
 <body>
-    <h1>Heatmap of Email "Sent" Time Signatures</h1> 
+    <h1>Heatmap of Email "Sent" Time Signatures</h1>
     <h4>A heatmap comparing the most popular times for attackers to send emails, broken down by day of the week and time of day.</h4>
     <h5>The darker the square, the higher frequency of emails sent during that time period.</h5>
     <div id="chart"></div>
     <div id="legend"></div>
     <script>
         var margin = {
-                top: 100,
+                top: 75,
                 right: 0,
                 bottom: 100,
                 left: 50
@@ -89,12 +89,18 @@
             if (error) return console.warn(error);
             console.log(json);
 
-            var json_values = d3.values(json)
+            var json_values = d3.values(json);
+            var max_freq = d3.max(json_values, function(d) {
+                return d.freq
+            });
+
+            var min_freq = d3.min(json_values, function(d) {
+                return d.freq
+            });
+
 
             var colorScale = d3.scaleLinear()
-                .domain([0, d3.max(json_values, function(d) {
-                    return d.freq;
-                })])
+                .domain([0, max_freq])
                 .range(["white", "orangered"]);
 
 
@@ -119,6 +125,7 @@
                     return colorScale(d.freq);
                 });
 
+            svg.append("g").append("text").text("Max Freq: " + max_freq).attr("x", 0).attr("y", -30).attr("font-weight", '700');
 
 
         });

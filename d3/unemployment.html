@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--/* code formatted from original example: https://observablehq.com/@d3/multi-line-chart
+    utilized d3.v4, d3-scale, and d3-array packages, called in head section */-->
+
+<head>
+    <h3> 2003 - 2007 Unemployment Rates by Country </h3>
+    <p> Added from an external dataset in Assignment 1, we joined recent global unemployment data to our TSV. </p>
+    <p>These are the top 51 countries of origin for the fraud emails and their corresponding unemployment rates over the time from 2003-2007</p>
+    <p>Details: X-axis is a continuous date scale and Y-axis is unemployment rates. Please hover each entry to see which line is each country and the specific unemployment rate for that selection. </p>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+
+</head>
+
+<body>
+    <div id="chart"></div>
+    <div id="histogram"></div>
+    <script>
+        // define svg elements for char
+        var margin = {
+                top: 50,
+                right: 10,
+                bottom: 10,
+                left: 40
+            },
+            width = 1000,
+            height = 500;
+
+        // read tsv data in and output chart
+        var tsv = d3.tsv("data/unemployment_final.tsv", function(error, tsv) {
+            if (error) return console.warn(error);
+            // slice to get relevant columns 
+            var columns = tsv.columns.slice(1);
+
+            var data = {
+                y: "% Unemployment",
+                series: tsv.map(d => ({
+                    name: d.country_name,
+                    values: columns.map(k => +d[k]) // values are the unemployment rates for each country name
+                })),
+                dates: columns.map(d3.utcParse("%Y"))
+
+
+            };
+
+            // define series for easier data calling
+            var series = data.series;
+
+            // scale x axis on dates
+            var x = d3.scaleUtc()
+                .domain(d3.extent(data.dates)).nice()
+                .range([margin.left, width - margin.right]);
+
+            // scale y axis on max value of unemployment rates
+            var y = d3.scaleLinear()
+                .domain([0, d3.max(series, d => d3.max(d.values))]).nice()
+                .range([height - margin.bottom, margin.top]);
+
+            // transform and define the axes 
+            var xAxis = g => g
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .attr("font-size", '10pt')
+                .call(d3.axisBottom(x).ticks(width / 80).tickSizeOuter(0));
+
+            var yAxis = g => g
+                .attr("transform", `translate(${margin.left},0)`)
+                .call(d3.axisLeft(y))
+                .attr("font-size", '9pt')
+                .call(g => g.select(".domain"))
+                .call(g => g.select(".tick:last-of-type text").clone()
+                    .attr("x", 0)
+                    .attr("text-anchor", "start")
+                    .attr("font-weight", "bold")
+                    .attr("font-size", '10pt')
+                    .text(data.y));
+
+            // create svg and append axes
+            var svg = d3.select("#chart").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom);
+
+            svg.append("g").call(xAxis);
+            svg.append("g").call(yAxis);
+
+            svg.append("g")
+                .call(xAxis);
+
+            svg.append("g")
+                .call(yAxis);
+
+            // define line function for each year,rate pair by country
+            var line = d3.line()
+                .defined(d => !isNaN(d))
+                .x((d, i) => x(data.dates[i]))
+                .y(d => y(d));
+
+
+            // path is the main chart, from series data, mapped by line 
+            var path = svg.append("g")
+                .attr("fill", "none")
+                .attr("stroke", "steelblue")
+                .attr("stroke-width", 1.5)
+                .attr("stroke-linejoin", "round")
+                .attr("stroke-linecap", "round")
+                .selectAll("path")
+                .data(series)
+                .enter()
+                .append("path")
+                .style("mix-blend-mode", "multiply")
+                .attr("d", d => line(d.values));
+
+
+            // define mouse-over settings and variables
+            var hover = svg.on("mousemove", moved)
+                .on("mouseenter", entered)
+                .on("mouseleave", left);
+
+            var dot = hover.append("g")
+                .attr("display", "none");
+
+            dot.append("circle")
+                .attr("r", 2.5);
+
+            dot.append("text")
+                .attr("font-family", "sans-serif")
+                .attr("font-size", 12)
+                .attr("text-anchor", "middle")
+                .attr("y", -8);
+
+            var form = d3.format(".1f")
+
+            function moved(event) {
+                d3.event.preventDefault();
+                var pointer = d3.mouse(this);
+                var xm = x.invert(pointer[0]);
+                var ym = y.invert(pointer[1]);
+                var i = d3.bisectCenter(data.dates, xm);
+                var s = d3.least(data.series, d => Math.abs(d.values[i] - ym));
+                path.attr("stroke", d => d === s ? null : "#ddd").filter(d => d === s).raise();
+                dot.attr("transform", `translate(${x(data.dates[i])},${y(s.values[i])})`);
+                dot.select("text").text(s.name + ": " + form(s.values[i]) + "%");
+            };
+
+            function entered() {
+                path.style("mix-blend-mode", null).attr("stroke", "#ddd");
+                dot.attr("display", null);
+            };
+
+            function left() {
+                path.style("mix-blend-mode", "multiply").attr("stroke", null);
+                dot.attr("display", "none");
+            };
+        });
+    </script>
+</body>
+
+</html>

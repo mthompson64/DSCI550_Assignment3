@@ -1,1503 +1,1504 @@
 {
-    "unique_keywords": [{
-            "word": "white",
-            "se_tag": "caption",
-            "freq": 463
-        },
-        {
-            "word": "black",
-            "se_tag": "caption",
-            "freq": 331
-        },
-        {
-            "word": "photo",
-            "se_tag": "caption",
-            "freq": 295
-        },
-        {
-            "word": "person",
-            "se_tag": "caption",
-            "freq": 145
-        },
-        {
-            "word": "holding",
-            "se_tag": "caption",
-            "freq": 143
-        },
-        {
-            "word": "computer",
-            "se_tag": "caption",
-            "freq": 142
-        },
-        {
-            "word": "top",
-            "se_tag": "caption",
-            "freq": 142
-        },
-        {
-            "word": "group",
-            "se_tag": "caption",
-            "freq": 130
-        },
-        {
-            "word": "people",
-            "se_tag": "caption",
-            "freq": 123
-        },
-        {
-            "word": "picture",
-            "se_tag": "caption",
-            "freq": 119
-        },
-        {
-            "word": "laptop",
-            "se_tag": "caption",
-            "freq": 115
-        },
-        {
-            "word": "standing",
-            "se_tag": "caption",
-            "freq": 108
-        },
-        {
-            "word": "desk",
-            "se_tag": "caption",
-            "freq": 87
-        },
-        {
-            "word": "clock",
-            "se_tag": "caption",
-            "freq": 84
-        },
-        {
-            "word": "sitting",
-            "se_tag": "caption",
-            "freq": 81
-        },
-        {
-            "word": "large",
-            "se_tag": "caption",
-            "freq": 81
-        },
-        {
-            "word": "table",
-            "se_tag": "caption",
-            "freq": 69
-        },
-        {
-            "word": "room",
-            "se_tag": "caption",
-            "freq": 64
-        },
-        {
-            "word": "close",
-            "se_tag": "caption",
-            "freq": 63
-        },
-        {
-            "word": "beach",
-            "se_tag": "caption",
-            "freq": 59
-        },
-        {
-            "word": "man",
-            "se_tag": "caption",
-            "freq": 54
-        },
-        {
-            "word": "snow",
-            "se_tag": "caption",
-            "freq": 52
-        },
-        {
-            "word": "plane",
-            "se_tag": "caption",
-            "freq": 50
-        },
-        {
-            "word": "sky",
-            "se_tag": "caption",
-            "freq": 48
-        },
-        {
-            "word": "cup",
-            "se_tag": "caption",
-            "freq": 46
-        },
-        {
-            "word": "flying",
-            "se_tag": "caption",
-            "freq": 45
-        },
-        {
-            "word": "covered",
-            "se_tag": "caption",
-            "freq": 41
-        },
-        {
-            "word": "next",
-            "se_tag": "caption",
-            "freq": 39
-        },
-        {
-            "word": "bird",
-            "se_tag": "caption",
-            "freq": 37
-        },
-        {
-            "word": "coffee",
-            "se_tag": "caption",
-            "freq": 35
-        },
-        {
-            "word": "window",
-            "se_tag": "caption",
-            "freq": 31
-        },
-        {
-            "word": "water",
-            "se_tag": "caption",
-            "freq": 30
-        },
-        {
-            "word": "surfboard",
-            "se_tag": "caption",
-            "freq": 30
-        },
-        {
-            "word": "plate",
-            "se_tag": "caption",
-            "freq": 30
-        },
-        {
-            "word": "pair",
-            "se_tag": "caption",
-            "freq": 29
-        },
-        {
-            "word": "keyboard",
-            "se_tag": "caption",
-            "freq": 27
-        },
-        {
-            "word": "wooden",
-            "se_tag": "caption",
-            "freq": 26
-        },
-        {
-            "word": "bunch",
-            "se_tag": "caption",
-            "freq": 25
-        },
-        {
-            "word": "scissors",
-            "se_tag": "caption",
-            "freq": 25
-        },
-        {
-            "word": "slope",
-            "se_tag": "caption",
-            "freq": 25
-        },
-        {
-            "word": "building",
-            "se_tag": "caption",
-            "freq": 25
-        },
-        {
-            "word": "mouse",
-            "se_tag": "caption",
-            "freq": 24
-        },
-        {
-            "word": "ski",
-            "se_tag": "caption",
-            "freq": 24
-        },
-        {
-            "word": "front",
-            "se_tag": "caption",
-            "freq": 21
-        },
-        {
-            "word": "lot",
-            "se_tag": "caption",
-            "freq": 21
-        },
-        {
-            "word": "bottle",
-            "se_tag": "caption",
-            "freq": 18
-        },
-        {
-            "word": "bed",
-            "se_tag": "caption",
-            "freq": 17
-        },
-        {
-            "word": "body",
-            "se_tag": "caption",
-            "freq": 15
-        },
-        {
-            "word": "frisbee",
-            "se_tag": "caption",
-            "freq": 14
-        },
-        {
-            "word": "field",
-            "se_tag": "caption",
-            "freq": 14
-        },
-        {
-            "word": "nthe",
-            "se_tag": "reply",
-            "freq": 1860
-        },
-        {
-            "word": "california",
-            "se_tag": "reply",
-            "freq": 1142
-        },
-        {
-            "word": "get",
-            "se_tag": "reply",
-            "freq": 1079
-        },
-        {
-            "word": "would",
-            "se_tag": "reply",
-            "freq": 1058
-        },
-        {
-            "word": "iso",
-            "se_tag": "reply",
-            "freq": 964
-        },
-        {
-            "word": "new",
-            "se_tag": "reply",
-            "freq": 939
-        },
-        {
-            "word": "wholesale",
-            "se_tag": "reply",
-            "freq": 934
-        },
-        {
-            "word": "know",
-            "se_tag": "reply",
-            "freq": 926
-        },
-        {
-            "word": "think",
-            "se_tag": "reply",
-            "freq": 839
-        },
-        {
-            "word": "market",
-            "se_tag": "reply",
-            "freq": 823
-        },
-        {
-            "word": "price",
-            "se_tag": "reply",
-            "freq": 808
-        },
-        {
-            "word": "energy",
-            "se_tag": "reply",
-            "freq": 793
-        },
-        {
-            "word": "power",
-            "se_tag": "reply",
-            "freq": 789
-        },
-        {
-            "word": "state",
-            "se_tag": "reply",
-            "freq": 760
-        },
-        {
-            "word": "call",
-            "se_tag": "reply",
-            "freq": 724
-        },
-        {
-            "word": "need",
-            "se_tag": "reply",
-            "freq": 716
-        },
-        {
-            "word": "office",
-            "se_tag": "reply",
-            "freq": 659
-        },
-        {
-            "word": "mail",
-            "se_tag": "reply",
-            "freq": 651
-        },
-        {
-            "word": "said",
-            "se_tag": "reply",
-            "freq": 648
-        },
-        {
-            "word": "agreement",
-            "se_tag": "reply",
-            "freq": 638
-        },
-        {
-            "word": "electricity",
-            "se_tag": "reply",
-            "freq": 619
-        },
-        {
-            "word": "going",
-            "se_tag": "reply",
-            "freq": 597
-        },
-        {
-            "word": "city",
-            "se_tag": "reply",
-            "freq": 585
-        },
-        {
-            "word": "commission",
-            "se_tag": "reply",
-            "freq": 581
-        },
-        {
-            "word": "please",
-            "se_tag": "reply",
-            "freq": 572
-        },
-        {
-            "word": "let",
-            "se_tag": "reply",
-            "freq": 565
-        },
-        {
-            "word": "week",
-            "se_tag": "reply",
-            "freq": 554
-        },
-        {
-            "word": "enron",
-            "se_tag": "reply",
-            "freq": 545
-        },
-        {
-            "word": "cpuc",
-            "se_tag": "reply",
-            "freq": 544
-        },
-        {
-            "word": "attached",
-            "se_tag": "reply",
-            "freq": 535
-        },
-        {
-            "word": "time",
-            "se_tag": "reply",
-            "freq": 534
-        },
-        {
-            "word": "utility",
-            "se_tag": "reply",
-            "freq": 521
-        },
-        {
-            "word": "question",
-            "se_tag": "reply",
-            "freq": 518
-        },
-        {
-            "word": "contract",
-            "se_tag": "reply",
-            "freq": 506
-        },
-        {
-            "word": "back",
-            "se_tag": "reply",
-            "freq": 506
-        },
-        {
-            "word": "send",
-            "se_tag": "reply",
-            "freq": 503
-        },
-        {
-            "word": "sure",
-            "se_tag": "reply",
-            "freq": 497
-        },
-        {
-            "word": "also",
-            "se_tag": "reply",
-            "freq": 494
-        },
-        {
-            "word": "work",
-            "se_tag": "reply",
-            "freq": 489
-        },
-        {
-            "word": "company",
-            "se_tag": "reply",
-            "freq": 480
-        },
-        {
-            "word": "change",
-            "se_tag": "reply",
-            "freq": 475
-        },
-        {
-            "word": "nplease",
-            "se_tag": "reply",
-            "freq": 471
-        },
-        {
-            "word": "year",
-            "se_tag": "reply",
-            "freq": 466
-        },
-        {
-            "word": "meeting",
-            "se_tag": "reply",
-            "freq": 463
-        },
-        {
-            "word": "good",
-            "se_tag": "reply",
-            "freq": 453
-        },
-        {
-            "word": "nkay",
-            "se_tag": "reply",
-            "freq": 446
-        },
-        {
-            "word": "system",
-            "se_tag": "reply",
-            "freq": 442
-        },
-        {
-            "word": "nthanks",
-            "se_tag": "reply",
-            "freq": 432
-        },
-        {
-            "word": "houston",
-            "se_tag": "reply",
-            "freq": 431
-        },
-        {
-            "word": "copy",
-            "se_tag": "reply",
-            "freq": 422
-        },
-        {
-            "word": "money",
-            "se_tag": "social_engineering",
-            "freq": 5439
-        },
-        {
-            "word": "fund",
-            "se_tag": "social_engineering",
-            "freq": 3949
-        },
-        {
-            "word": "account",
-            "se_tag": "social_engineering",
-            "freq": 3539
-        },
-        {
-            "word": "bank",
-            "se_tag": "social_engineering",
-            "freq": 3168
-        },
-        {
-            "word": "country",
-            "se_tag": "social_engineering",
-            "freq": 2717
-        },
-        {
-            "word": "business",
-            "se_tag": "social_engineering",
-            "freq": 2577
-        },
-        {
-            "word": "million",
-            "se_tag": "social_engineering",
-            "freq": 2504
-        },
-        {
-            "word": "company",
-            "se_tag": "social_engineering",
-            "freq": 2417
-        },
-        {
-            "word": "transaction",
-            "se_tag": "social_engineering",
-            "freq": 2218
-        },
-        {
-            "word": "contact",
-            "se_tag": "social_engineering",
-            "freq": 2101
-        },
-        {
-            "word": "please",
-            "se_tag": "social_engineering",
-            "freq": 1945
-        },
-        {
-            "word": "want",
-            "se_tag": "social_engineering",
-            "freq": 1880
-        },
-        {
-            "word": "security",
-            "se_tag": "social_engineering",
-            "freq": 1815
-        },
-        {
-            "word": "family",
-            "se_tag": "social_engineering",
-            "freq": 1800
-        },
-        {
-            "word": "assistance",
-            "se_tag": "social_engineering",
-            "freq": 1714
-        },
-        {
-            "word": "dollar",
-            "se_tag": "social_engineering",
-            "freq": 1697
-        },
-        {
-            "word": "email",
-            "se_tag": "social_engineering",
-            "freq": 1686
-        },
-        {
-            "word": "transfer",
-            "se_tag": "social_engineering",
-            "freq": 1679
-        },
-        {
-            "word": "father",
-            "se_tag": "social_engineering",
-            "freq": 1657
-        },
-        {
-            "word": "know",
-            "se_tag": "social_engineering",
-            "freq": 1657
-        },
-        {
-            "word": "late",
-            "se_tag": "social_engineering",
-            "freq": 1639
-        },
-        {
-            "word": "sum",
-            "se_tag": "social_engineering",
-            "freq": 1635
-        },
-        {
-            "word": "one",
-            "se_tag": "social_engineering",
-            "freq": 1491
-        },
-        {
-            "word": "investment",
-            "se_tag": "social_engineering",
-            "freq": 1450
-        },
-        {
-            "word": "name",
-            "se_tag": "social_engineering",
-            "freq": 1374
-        },
-        {
-            "word": "year",
-            "se_tag": "social_engineering",
-            "freq": 1351
-        },
-        {
-            "word": "mail",
-            "se_tag": "social_engineering",
-            "freq": 1345
-        },
-        {
-            "word": "also",
-            "se_tag": "social_engineering",
-            "freq": 1340
-        },
-        {
-            "word": "foreign",
-            "se_tag": "social_engineering",
-            "freq": 1318
-        },
-        {
-            "word": "africa",
-            "se_tag": "social_engineering",
-            "freq": 1284
-        },
-        {
-            "word": "next",
-            "se_tag": "social_engineering",
-            "freq": 1276
-        },
-        {
-            "word": "government",
-            "se_tag": "social_engineering",
-            "freq": 1263
-        },
-        {
-            "word": "dear",
-            "se_tag": "social_engineering",
-            "freq": 1173
-        },
-        {
-            "word": "help",
-            "se_tag": "social_engineering",
-            "freq": 1149
-        },
-        {
-            "word": "information",
-            "se_tag": "social_engineering",
-            "freq": 1137
-        },
-        {
-            "word": "death",
-            "se_tag": "social_engineering",
-            "freq": 1128
-        },
-        {
-            "word": "regard",
-            "se_tag": "social_engineering",
-            "freq": 1126
-        },
-        {
-            "word": "since",
-            "se_tag": "social_engineering",
-            "freq": 1121
-        },
-        {
-            "word": "deposit",
-            "se_tag": "social_engineering",
-            "freq": 1120
-        },
-        {
-            "word": "assist",
-            "se_tag": "social_engineering",
-            "freq": 1112
-        },
-        {
-            "word": "god",
-            "se_tag": "social_engineering",
-            "freq": 1111
-        },
-        {
-            "word": "state",
-            "se_tag": "social_engineering",
-            "freq": 1105
-        },
-        {
-            "word": "com",
-            "se_tag": "social_engineering",
-            "freq": 1105
-        },
-        {
-            "word": "son",
-            "se_tag": "social_engineering",
-            "freq": 1091
-        },
-        {
-            "word": "deposited",
-            "se_tag": "social_engineering",
-            "freq": 1089
-        },
-        {
-            "word": "would",
-            "se_tag": "social_engineering",
-            "freq": 1074
-        },
-        {
-            "word": "kin",
-            "se_tag": "social_engineering",
-            "freq": 1072
-        },
-        {
-            "word": "united",
-            "se_tag": "social_engineering",
-            "freq": 1058
-        },
-        {
-            "word": "husband",
-            "se_tag": "social_engineering",
-            "freq": 1057
-        },
-        {
-            "word": "private",
-            "se_tag": "social_engineering",
-            "freq": 1016
-        },
-        {
-            "word": "money",
-            "se_tag": "recon",
-            "freq": 1816
-        },
-        {
-            "word": "account",
-            "se_tag": "recon",
-            "freq": 1587
-        },
-        {
-            "word": "bank",
-            "se_tag": "recon",
-            "freq": 1434
-        },
-        {
-            "word": "fund",
-            "se_tag": "recon",
-            "freq": 1048
-        },
-        {
-            "word": "business",
-            "se_tag": "recon",
-            "freq": 966
-        },
-        {
-            "word": "transaction",
-            "se_tag": "recon",
-            "freq": 951
-        },
-        {
-            "word": "please",
-            "se_tag": "recon",
-            "freq": 920
-        },
-        {
-            "word": "country",
-            "se_tag": "recon",
-            "freq": 843
-        },
-        {
-            "word": "million",
-            "se_tag": "recon",
-            "freq": 756
-        },
-        {
-            "word": "company",
-            "se_tag": "recon",
-            "freq": 704
-        },
-        {
-            "word": "dollar",
-            "se_tag": "recon",
-            "freq": 639
-        },
-        {
-            "word": "transfer",
-            "se_tag": "recon",
-            "freq": 638
-        },
-        {
-            "word": "contact",
-            "se_tag": "recon",
-            "freq": 630
-        },
-        {
-            "word": "foreign",
-            "se_tag": "recon",
-            "freq": 615
-        },
-        {
-            "word": "next",
-            "se_tag": "recon",
-            "freq": 596
-        },
-        {
-            "word": "assistance",
-            "se_tag": "recon",
-            "freq": 542
-        },
-        {
-            "word": "kin",
-            "se_tag": "recon",
-            "freq": 536
-        },
-        {
-            "word": "email",
-            "se_tag": "recon",
-            "freq": 525
-        },
-        {
-            "word": "also",
-            "se_tag": "recon",
-            "freq": 502
-        },
-        {
-            "word": "reply",
-            "se_tag": "recon",
-            "freq": 501
-        },
-        {
-            "word": "sum",
-            "se_tag": "recon",
-            "freq": 499
-        },
-        {
-            "word": "africa",
-            "se_tag": "recon",
-            "freq": 493
-        },
-        {
-            "word": "late",
-            "se_tag": "recon",
-            "freq": 487
-        },
-        {
-            "word": "father",
-            "se_tag": "recon",
-            "freq": 470
-        },
-        {
-            "word": "year",
-            "se_tag": "recon",
-            "freq": 464
-        },
-        {
-            "word": "family",
-            "se_tag": "recon",
-            "freq": 455
-        },
-        {
-            "word": "security",
-            "se_tag": "recon",
-            "freq": 444
-        },
-        {
-            "word": "claim",
-            "se_tag": "recon",
-            "freq": 439
-        },
-        {
-            "word": "since",
-            "se_tag": "recon",
-            "freq": 436
-        },
-        {
-            "word": "get",
-            "se_tag": "recon",
-            "freq": 435
-        },
-        {
-            "word": "know",
-            "se_tag": "recon",
-            "freq": 429
-        },
-        {
-            "word": "one",
-            "se_tag": "recon",
-            "freq": 424
-        },
-        {
-            "word": "want",
-            "se_tag": "recon",
-            "freq": 423
-        },
-        {
-            "word": "amount",
-            "se_tag": "recon",
-            "freq": 421
-        },
-        {
-            "word": "united",
-            "se_tag": "recon",
-            "freq": 412
-        },
-        {
-            "word": "died",
-            "se_tag": "recon",
-            "freq": 408
-        },
-        {
-            "word": "mail",
-            "se_tag": "recon",
-            "freq": 403
-        },
-        {
-            "word": "state",
-            "se_tag": "recon",
-            "freq": 396
-        },
-        {
-            "word": "investment",
-            "se_tag": "recon",
-            "freq": 375
-        },
-        {
-            "word": "regard",
-            "se_tag": "recon",
-            "freq": 368
-        },
-        {
-            "word": "address",
-            "se_tag": "recon",
-            "freq": 363
-        },
-        {
-            "word": "government",
-            "se_tag": "recon",
-            "freq": 358
-        },
-        {
-            "word": "death",
-            "se_tag": "recon",
-            "freq": 356
-        },
-        {
-            "word": "name",
-            "se_tag": "recon",
-            "freq": 354
-        },
-        {
-            "word": "partner",
-            "se_tag": "recon",
-            "freq": 351
-        },
-        {
-            "word": "client",
-            "se_tag": "recon",
-            "freq": 347
-        },
-        {
-            "word": "dear",
-            "se_tag": "recon",
-            "freq": 345
-        },
-        {
-            "word": "immediately",
-            "se_tag": "recon",
-            "freq": 345
-        },
-        {
-            "word": "help",
-            "se_tag": "recon",
-            "freq": 344
-        },
-        {
-            "word": "com",
-            "se_tag": "recon",
-            "freq": 342
-        },
-        {
-            "word": "bank",
-            "se_tag": "phishing",
-            "freq": 5545
-        },
-        {
-            "word": "account",
-            "se_tag": "phishing",
-            "freq": 5337
-        },
-        {
-            "word": "money",
-            "se_tag": "phishing",
-            "freq": 4830
-        },
-        {
-            "word": "fund",
-            "se_tag": "phishing",
-            "freq": 4218
-        },
-        {
-            "word": "transaction",
-            "se_tag": "phishing",
-            "freq": 3108
-        },
-        {
-            "word": "next",
-            "se_tag": "phishing",
-            "freq": 2819
-        },
-        {
-            "word": "kin",
-            "se_tag": "phishing",
-            "freq": 2677
-        },
-        {
-            "word": "business",
-            "se_tag": "phishing",
-            "freq": 2579
-        },
-        {
-            "word": "transfer",
-            "se_tag": "phishing",
-            "freq": 2337
-        },
-        {
-            "word": "number",
-            "se_tag": "phishing",
-            "freq": 2281
-        },
-        {
-            "word": "country",
-            "se_tag": "phishing",
-            "freq": 2281
-        },
-        {
-            "word": "million",
-            "se_tag": "phishing",
-            "freq": 2238
-        },
-        {
-            "word": "please",
-            "se_tag": "phishing",
-            "freq": 2238
-        },
-        {
-            "word": "name",
-            "se_tag": "phishing",
-            "freq": 2057
-        },
-        {
-            "word": "foreign",
-            "se_tag": "phishing",
-            "freq": 2043
-        },
-        {
-            "word": "contact",
-            "se_tag": "phishing",
-            "freq": 1914
-        },
-        {
-            "word": "dollar",
-            "se_tag": "phishing",
-            "freq": 1806
-        },
-        {
-            "word": "claim",
-            "se_tag": "phishing",
-            "freq": 1762
-        },
-        {
-            "word": "address",
-            "se_tag": "phishing",
-            "freq": 1738
-        },
-        {
-            "word": "company",
-            "se_tag": "phishing",
-            "freq": 1715
-        },
-        {
-            "word": "fax",
-            "se_tag": "phishing",
-            "freq": 1645
-        },
-        {
-            "word": "email",
-            "se_tag": "phishing",
-            "freq": 1597
-        },
-        {
-            "word": "sum",
-            "se_tag": "phishing",
-            "freq": 1439
-        },
-        {
-            "word": "reply",
-            "se_tag": "phishing",
-            "freq": 1417
-        },
-        {
-            "word": "private",
-            "se_tag": "phishing",
-            "freq": 1369
-        },
-        {
-            "word": "one",
-            "se_tag": "phishing",
-            "freq": 1353
-        },
-        {
-            "word": "information",
-            "se_tag": "phishing",
-            "freq": 1346
-        },
-        {
-            "word": "telephone",
-            "se_tag": "phishing",
-            "freq": 1332
-        },
-        {
-            "word": "since",
-            "se_tag": "phishing",
-            "freq": 1315
-        },
-        {
-            "word": "also",
-            "se_tag": "phishing",
-            "freq": 1300
-        },
-        {
-            "word": "foreigner",
-            "se_tag": "phishing",
-            "freq": 1285
-        },
-        {
-            "word": "want",
-            "se_tag": "phishing",
-            "freq": 1279
-        },
-        {
-            "word": "mail",
-            "se_tag": "phishing",
-            "freq": 1239
-        },
-        {
-            "word": "assistance",
-            "se_tag": "phishing",
-            "freq": 1193
-        },
-        {
-            "word": "year",
-            "se_tag": "phishing",
-            "freq": 1138
-        },
-        {
-            "word": "family",
-            "se_tag": "phishing",
-            "freq": 1131
-        },
-        {
-            "word": "died",
-            "se_tag": "phishing",
-            "freq": 1131
-        },
-        {
-            "word": "government",
-            "se_tag": "phishing",
-            "freq": 1128
-        },
-        {
-            "word": "confidential",
-            "se_tag": "phishing",
-            "freq": 1085
-        },
-        {
-            "word": "africa",
-            "se_tag": "phishing",
-            "freq": 1077
-        },
-        {
-            "word": "shall",
-            "se_tag": "phishing",
-            "freq": 1074
-        },
-        {
-            "word": "know",
-            "se_tag": "phishing",
-            "freq": 1070
-        },
-        {
-            "word": "document",
-            "se_tag": "phishing",
-            "freq": 1060
-        },
-        {
-            "word": "united",
-            "se_tag": "phishing",
-            "freq": 1057
-        },
-        {
-            "word": "late",
-            "se_tag": "phishing",
-            "freq": 1054
-        },
-        {
-            "word": "beneficiary",
-            "se_tag": "phishing",
-            "freq": 1051
-        },
-        {
-            "word": "state",
-            "se_tag": "phishing",
-            "freq": 1050
-        },
-        {
-            "word": "immediately",
-            "se_tag": "phishing",
-            "freq": 1050
-        },
-        {
-            "word": "come",
-            "se_tag": "phishing",
-            "freq": 1042
-        },
-        {
-            "word": "security",
-            "se_tag": "phishing",
-            "freq": 1036
-        },
-        {
-            "word": "money",
-            "se_tag": "malware",
-            "freq": 380
-        },
-        {
-            "word": "account",
-            "se_tag": "malware",
-            "freq": 349
-        },
-        {
-            "word": "fund",
-            "se_tag": "malware",
-            "freq": 291
-        },
-        {
-            "word": "transaction",
-            "se_tag": "malware",
-            "freq": 262
-        },
-        {
-            "word": "bank",
-            "se_tag": "malware",
-            "freq": 244
-        },
-        {
-            "word": "company",
-            "se_tag": "malware",
-            "freq": 244
-        },
-        {
-            "word": "country",
-            "se_tag": "malware",
-            "freq": 235
-        },
-        {
-            "word": "please",
-            "se_tag": "malware",
-            "freq": 220
-        },
-        {
-            "word": "million",
-            "se_tag": "malware",
-            "freq": 213
-        },
-        {
-            "word": "assistance",
-            "se_tag": "malware",
-            "freq": 209
-        },
-        {
-            "word": "transfer",
-            "se_tag": "malware",
-            "freq": 193
-        },
-        {
-            "word": "family",
-            "se_tag": "malware",
-            "freq": 193
-        },
-        {
-            "word": "contact",
-            "se_tag": "malware",
-            "freq": 190
-        },
-        {
-            "word": "email",
-            "se_tag": "malware",
-            "freq": 188
-        },
-        {
-            "word": "government",
-            "se_tag": "malware",
-            "freq": 176
-        },
-        {
-            "word": "deposit",
-            "se_tag": "malware",
-            "freq": 173
-        },
-        {
-            "word": "security",
-            "se_tag": "malware",
-            "freq": 169
-        },
-        {
-            "word": "document",
-            "se_tag": "malware",
-            "freq": 168
-        },
-        {
-            "word": "business",
-            "se_tag": "malware",
-            "freq": 153
-        },
-        {
-            "word": "late",
-            "se_tag": "malware",
-            "freq": 151
-        },
-        {
-            "word": "address",
-            "se_tag": "malware",
-            "freq": 143
-        },
-        {
-            "word": "sum",
-            "se_tag": "malware",
-            "freq": 143
-        },
-        {
-            "word": "death",
-            "se_tag": "malware",
-            "freq": 141
-        },
-        {
-            "word": "dollar",
-            "se_tag": "malware",
-            "freq": 139
-        },
-        {
-            "word": "foreign",
-            "se_tag": "malware",
-            "freq": 137
-        },
-        {
-            "word": "father",
-            "se_tag": "malware",
-            "freq": 133
-        },
-        {
-            "word": "contract",
-            "se_tag": "malware",
-            "freq": 132
-        },
-        {
-            "word": "name",
-            "se_tag": "malware",
-            "freq": 127
-        },
-        {
-            "word": "want",
-            "se_tag": "malware",
-            "freq": 126
-        },
-        {
-            "word": "africa",
-            "se_tag": "malware",
-            "freq": 126
-        },
-        {
-            "word": "would",
-            "se_tag": "malware",
-            "freq": 123
-        },
-        {
-            "word": "south",
-            "se_tag": "malware",
-            "freq": 118
-        },
-        {
-            "word": "nigeria",
-            "se_tag": "malware",
-            "freq": 111
-        },
-        {
-            "word": "since",
-            "se_tag": "malware",
-            "freq": 107
-        },
-        {
-            "word": "shall",
-            "se_tag": "malware",
-            "freq": 106
-        },
-        {
-            "word": "also",
-            "se_tag": "malware",
-            "freq": 104
-        },
-        {
-            "word": "kin",
-            "se_tag": "malware",
-            "freq": 103
-        },
-        {
-            "word": "year",
-            "se_tag": "malware",
-            "freq": 101
-        },
-        {
-            "word": "know",
-            "se_tag": "malware",
-            "freq": 100
-        },
-        {
-            "word": "next",
-            "se_tag": "malware",
-            "freq": 98
-        },
-        {
-            "word": "confidential",
-            "se_tag": "malware",
-            "freq": 97
-        },
-        {
-            "word": "share",
-            "se_tag": "malware",
-            "freq": 94
-        },
-        {
-            "word": "investment",
-            "se_tag": "malware",
-            "freq": 94
-        },
-        {
-            "word": "husband",
-            "se_tag": "malware",
-            "freq": 94
-        },
-        {
-            "word": "com",
-            "se_tag": "malware",
-            "freq": 92
-        },
-        {
-            "word": "get",
-            "se_tag": "malware",
-            "freq": 92
-        },
-        {
-            "word": "safe",
-            "se_tag": "malware",
-            "freq": 91
-        },
-        {
-            "word": "approved",
-            "se_tag": "malware",
-            "freq": 90
-        },
-        {
-            "word": "europe",
-            "se_tag": "malware",
-            "freq": 90
-        },
-        {
-            "word": "claim",
-            "se_tag": "malware",
-            "freq": 89
-        }
-    ]
+  "unique_keywords": [
+    {
+      "word": "white",
+      "se_tag": "caption",
+      "freq": 463
+    },
+    {
+      "word": "black",
+      "se_tag": "caption",
+      "freq": 331
+    },
+    {
+      "word": "photo",
+      "se_tag": "caption",
+      "freq": 295
+    },
+    {
+      "word": "person",
+      "se_tag": "caption",
+      "freq": 145
+    },
+    {
+      "word": "holding",
+      "se_tag": "caption",
+      "freq": 143
+    },
+    {
+      "word": "computer",
+      "se_tag": "caption",
+      "freq": 142
+    },
+    {
+      "word": "top",
+      "se_tag": "caption",
+      "freq": 142
+    },
+    {
+      "word": "group",
+      "se_tag": "caption",
+      "freq": 130
+    },
+    {
+      "word": "people",
+      "se_tag": "caption",
+      "freq": 123
+    },
+    {
+      "word": "picture",
+      "se_tag": "caption",
+      "freq": 119
+    },
+    {
+      "word": "laptop",
+      "se_tag": "caption",
+      "freq": 115
+    },
+    {
+      "word": "standing",
+      "se_tag": "caption",
+      "freq": 108
+    },
+    {
+      "word": "desk",
+      "se_tag": "caption",
+      "freq": 87
+    },
+    {
+      "word": "clock",
+      "se_tag": "caption",
+      "freq": 84
+    },
+    {
+      "word": "sitting",
+      "se_tag": "caption",
+      "freq": 81
+    },
+    {
+      "word": "large",
+      "se_tag": "caption",
+      "freq": 81
+    },
+    {
+      "word": "table",
+      "se_tag": "caption",
+      "freq": 69
+    },
+    {
+      "word": "room",
+      "se_tag": "caption",
+      "freq": 64
+    },
+    {
+      "word": "close",
+      "se_tag": "caption",
+      "freq": 63
+    },
+    {
+      "word": "beach",
+      "se_tag": "caption",
+      "freq": 59
+    },
+    {
+      "word": "man",
+      "se_tag": "caption",
+      "freq": 54
+    },
+    {
+      "word": "snow",
+      "se_tag": "caption",
+      "freq": 52
+    },
+    {
+      "word": "plane",
+      "se_tag": "caption",
+      "freq": 50
+    },
+    {
+      "word": "sky",
+      "se_tag": "caption",
+      "freq": 48
+    },
+    {
+      "word": "cup",
+      "se_tag": "caption",
+      "freq": 46
+    },
+    {
+      "word": "flying",
+      "se_tag": "caption",
+      "freq": 45
+    },
+    {
+      "word": "covered",
+      "se_tag": "caption",
+      "freq": 41
+    },
+    {
+      "word": "next",
+      "se_tag": "caption",
+      "freq": 39
+    },
+    {
+      "word": "bird",
+      "se_tag": "caption",
+      "freq": 37
+    },
+    {
+      "word": "coffee",
+      "se_tag": "caption",
+      "freq": 35
+    },
+    {
+      "word": "window",
+      "se_tag": "caption",
+      "freq": 31
+    },
+    {
+      "word": "water",
+      "se_tag": "caption",
+      "freq": 30
+    },
+    {
+      "word": "surfboard",
+      "se_tag": "caption",
+      "freq": 30
+    },
+    {
+      "word": "plate",
+      "se_tag": "caption",
+      "freq": 30
+    },
+    {
+      "word": "pair",
+      "se_tag": "caption",
+      "freq": 29
+    },
+    {
+      "word": "keyboard",
+      "se_tag": "caption",
+      "freq": 27
+    },
+    {
+      "word": "wooden",
+      "se_tag": "caption",
+      "freq": 26
+    },
+    {
+      "word": "bunch",
+      "se_tag": "caption",
+      "freq": 25
+    },
+    {
+      "word": "scissors",
+      "se_tag": "caption",
+      "freq": 25
+    },
+    {
+      "word": "slope",
+      "se_tag": "caption",
+      "freq": 25
+    },
+    {
+      "word": "building",
+      "se_tag": "caption",
+      "freq": 25
+    },
+    {
+      "word": "mouse",
+      "se_tag": "caption",
+      "freq": 24
+    },
+    {
+      "word": "ski",
+      "se_tag": "caption",
+      "freq": 24
+    },
+    {
+      "word": "front",
+      "se_tag": "caption",
+      "freq": 21
+    },
+    {
+      "word": "lot",
+      "se_tag": "caption",
+      "freq": 21
+    },
+    {
+      "word": "bottle",
+      "se_tag": "caption",
+      "freq": 18
+    },
+    {
+      "word": "bed",
+      "se_tag": "caption",
+      "freq": 17
+    },
+    {
+      "word": "body",
+      "se_tag": "caption",
+      "freq": 15
+    },
+    {
+      "word": "frisbee",
+      "se_tag": "caption",
+      "freq": 14
+    },
+    {
+      "word": "field",
+      "se_tag": "caption",
+      "freq": 14
+    },
+    {
+      "word": "nthe",
+      "se_tag": "reply",
+      "freq": 1860
+    },
+    {
+      "word": "california",
+      "se_tag": "reply",
+      "freq": 1142
+    },
+    {
+      "word": "get",
+      "se_tag": "reply",
+      "freq": 1079
+    },
+    {
+      "word": "would",
+      "se_tag": "reply",
+      "freq": 1058
+    },
+    {
+      "word": "iso",
+      "se_tag": "reply",
+      "freq": 964
+    },
+    {
+      "word": "new",
+      "se_tag": "reply",
+      "freq": 939
+    },
+    {
+      "word": "wholesale",
+      "se_tag": "reply",
+      "freq": 934
+    },
+    {
+      "word": "know",
+      "se_tag": "reply",
+      "freq": 926
+    },
+    {
+      "word": "think",
+      "se_tag": "reply",
+      "freq": 839
+    },
+    {
+      "word": "market",
+      "se_tag": "reply",
+      "freq": 823
+    },
+    {
+      "word": "price",
+      "se_tag": "reply",
+      "freq": 808
+    },
+    {
+      "word": "energy",
+      "se_tag": "reply",
+      "freq": 793
+    },
+    {
+      "word": "power",
+      "se_tag": "reply",
+      "freq": 789
+    },
+    {
+      "word": "state",
+      "se_tag": "reply",
+      "freq": 760
+    },
+    {
+      "word": "call",
+      "se_tag": "reply",
+      "freq": 724
+    },
+    {
+      "word": "need",
+      "se_tag": "reply",
+      "freq": 716
+    },
+    {
+      "word": "office",
+      "se_tag": "reply",
+      "freq": 659
+    },
+    {
+      "word": "mail",
+      "se_tag": "reply",
+      "freq": 651
+    },
+    {
+      "word": "said",
+      "se_tag": "reply",
+      "freq": 648
+    },
+    {
+      "word": "agreement",
+      "se_tag": "reply",
+      "freq": 638
+    },
+    {
+      "word": "electricity",
+      "se_tag": "reply",
+      "freq": 619
+    },
+    {
+      "word": "going",
+      "se_tag": "reply",
+      "freq": 597
+    },
+    {
+      "word": "city",
+      "se_tag": "reply",
+      "freq": 585
+    },
+    {
+      "word": "commission",
+      "se_tag": "reply",
+      "freq": 581
+    },
+    {
+      "word": "please",
+      "se_tag": "reply",
+      "freq": 572
+    },
+    {
+      "word": "let",
+      "se_tag": "reply",
+      "freq": 565
+    },
+    {
+      "word": "week",
+      "se_tag": "reply",
+      "freq": 554
+    },
+    {
+      "word": "enron",
+      "se_tag": "reply",
+      "freq": 545
+    },
+    {
+      "word": "cpuc",
+      "se_tag": "reply",
+      "freq": 544
+    },
+    {
+      "word": "attached",
+      "se_tag": "reply",
+      "freq": 535
+    },
+    {
+      "word": "time",
+      "se_tag": "reply",
+      "freq": 534
+    },
+    {
+      "word": "utility",
+      "se_tag": "reply",
+      "freq": 521
+    },
+    {
+      "word": "question",
+      "se_tag": "reply",
+      "freq": 518
+    },
+    {
+      "word": "contract",
+      "se_tag": "reply",
+      "freq": 506
+    },
+    {
+      "word": "back",
+      "se_tag": "reply",
+      "freq": 506
+    },
+    {
+      "word": "send",
+      "se_tag": "reply",
+      "freq": 503
+    },
+    {
+      "word": "sure",
+      "se_tag": "reply",
+      "freq": 497
+    },
+    {
+      "word": "also",
+      "se_tag": "reply",
+      "freq": 494
+    },
+    {
+      "word": "work",
+      "se_tag": "reply",
+      "freq": 489
+    },
+    {
+      "word": "company",
+      "se_tag": "reply",
+      "freq": 480
+    },
+    {
+      "word": "change",
+      "se_tag": "reply",
+      "freq": 475
+    },
+    {
+      "word": "nplease",
+      "se_tag": "reply",
+      "freq": 471
+    },
+    {
+      "word": "year",
+      "se_tag": "reply",
+      "freq": 466
+    },
+    {
+      "word": "meeting",
+      "se_tag": "reply",
+      "freq": 463
+    },
+    {
+      "word": "good",
+      "se_tag": "reply",
+      "freq": 453
+    },
+    {
+      "word": "nkay",
+      "se_tag": "reply",
+      "freq": 446
+    },
+    {
+      "word": "system",
+      "se_tag": "reply",
+      "freq": 442
+    },
+    {
+      "word": "nthanks",
+      "se_tag": "reply",
+      "freq": 432
+    },
+    {
+      "word": "houston",
+      "se_tag": "reply",
+      "freq": 431
+    },
+    {
+      "word": "copy",
+      "se_tag": "reply",
+      "freq": 422
+    },
+    {
+      "word": "money",
+      "se_tag": "social_engineering",
+      "freq": 5439
+    },
+    {
+      "word": "fund",
+      "se_tag": "social_engineering",
+      "freq": 3949
+    },
+    {
+      "word": "account",
+      "se_tag": "social_engineering",
+      "freq": 3539
+    },
+    {
+      "word": "bank",
+      "se_tag": "social_engineering",
+      "freq": 3168
+    },
+    {
+      "word": "country",
+      "se_tag": "social_engineering",
+      "freq": 2717
+    },
+    {
+      "word": "business",
+      "se_tag": "social_engineering",
+      "freq": 2577
+    },
+    {
+      "word": "million",
+      "se_tag": "social_engineering",
+      "freq": 2504
+    },
+    {
+      "word": "company",
+      "se_tag": "social_engineering",
+      "freq": 2417
+    },
+    {
+      "word": "transaction",
+      "se_tag": "social_engineering",
+      "freq": 2218
+    },
+    {
+      "word": "contact",
+      "se_tag": "social_engineering",
+      "freq": 2101
+    },
+    {
+      "word": "please",
+      "se_tag": "social_engineering",
+      "freq": 1945
+    },
+    {
+      "word": "want",
+      "se_tag": "social_engineering",
+      "freq": 1880
+    },
+    {
+      "word": "security",
+      "se_tag": "social_engineering",
+      "freq": 1815
+    },
+    {
+      "word": "family",
+      "se_tag": "social_engineering",
+      "freq": 1800
+    },
+    {
+      "word": "assistance",
+      "se_tag": "social_engineering",
+      "freq": 1714
+    },
+    {
+      "word": "dollar",
+      "se_tag": "social_engineering",
+      "freq": 1697
+    },
+    {
+      "word": "email",
+      "se_tag": "social_engineering",
+      "freq": 1686
+    },
+    {
+      "word": "transfer",
+      "se_tag": "social_engineering",
+      "freq": 1679
+    },
+    {
+      "word": "father",
+      "se_tag": "social_engineering",
+      "freq": 1657
+    },
+    {
+      "word": "know",
+      "se_tag": "social_engineering",
+      "freq": 1657
+    },
+    {
+      "word": "late",
+      "se_tag": "social_engineering",
+      "freq": 1639
+    },
+    {
+      "word": "sum",
+      "se_tag": "social_engineering",
+      "freq": 1635
+    },
+    {
+      "word": "one",
+      "se_tag": "social_engineering",
+      "freq": 1491
+    },
+    {
+      "word": "investment",
+      "se_tag": "social_engineering",
+      "freq": 1450
+    },
+    {
+      "word": "name",
+      "se_tag": "social_engineering",
+      "freq": 1374
+    },
+    {
+      "word": "year",
+      "se_tag": "social_engineering",
+      "freq": 1351
+    },
+    {
+      "word": "mail",
+      "se_tag": "social_engineering",
+      "freq": 1345
+    },
+    {
+      "word": "also",
+      "se_tag": "social_engineering",
+      "freq": 1340
+    },
+    {
+      "word": "foreign",
+      "se_tag": "social_engineering",
+      "freq": 1318
+    },
+    {
+      "word": "africa",
+      "se_tag": "social_engineering",
+      "freq": 1284
+    },
+    {
+      "word": "next",
+      "se_tag": "social_engineering",
+      "freq": 1276
+    },
+    {
+      "word": "government",
+      "se_tag": "social_engineering",
+      "freq": 1263
+    },
+    {
+      "word": "dear",
+      "se_tag": "social_engineering",
+      "freq": 1173
+    },
+    {
+      "word": "help",
+      "se_tag": "social_engineering",
+      "freq": 1149
+    },
+    {
+      "word": "information",
+      "se_tag": "social_engineering",
+      "freq": 1137
+    },
+    {
+      "word": "death",
+      "se_tag": "social_engineering",
+      "freq": 1128
+    },
+    {
+      "word": "regard",
+      "se_tag": "social_engineering",
+      "freq": 1126
+    },
+    {
+      "word": "since",
+      "se_tag": "social_engineering",
+      "freq": 1121
+    },
+    {
+      "word": "deposit",
+      "se_tag": "social_engineering",
+      "freq": 1120
+    },
+    {
+      "word": "assist",
+      "se_tag": "social_engineering",
+      "freq": 1112
+    },
+    {
+      "word": "god",
+      "se_tag": "social_engineering",
+      "freq": 1111
+    },
+    {
+      "word": "state",
+      "se_tag": "social_engineering",
+      "freq": 1105
+    },
+    {
+      "word": "com",
+      "se_tag": "social_engineering",
+      "freq": 1105
+    },
+    {
+      "word": "son",
+      "se_tag": "social_engineering",
+      "freq": 1091
+    },
+    {
+      "word": "deposited",
+      "se_tag": "social_engineering",
+      "freq": 1089
+    },
+    {
+      "word": "would",
+      "se_tag": "social_engineering",
+      "freq": 1074
+    },
+    {
+      "word": "kin",
+      "se_tag": "social_engineering",
+      "freq": 1072
+    },
+    {
+      "word": "united",
+      "se_tag": "social_engineering",
+      "freq": 1058
+    },
+    {
+      "word": "husband",
+      "se_tag": "social_engineering",
+      "freq": 1057
+    },
+    {
+      "word": "private",
+      "se_tag": "social_engineering",
+      "freq": 1016
+    },
+    {
+      "word": "money",
+      "se_tag": "recon",
+      "freq": 1816
+    },
+    {
+      "word": "account",
+      "se_tag": "recon",
+      "freq": 1587
+    },
+    {
+      "word": "bank",
+      "se_tag": "recon",
+      "freq": 1434
+    },
+    {
+      "word": "fund",
+      "se_tag": "recon",
+      "freq": 1048
+    },
+    {
+      "word": "business",
+      "se_tag": "recon",
+      "freq": 966
+    },
+    {
+      "word": "transaction",
+      "se_tag": "recon",
+      "freq": 951
+    },
+    {
+      "word": "please",
+      "se_tag": "recon",
+      "freq": 920
+    },
+    {
+      "word": "country",
+      "se_tag": "recon",
+      "freq": 843
+    },
+    {
+      "word": "million",
+      "se_tag": "recon",
+      "freq": 756
+    },
+    {
+      "word": "company",
+      "se_tag": "recon",
+      "freq": 704
+    },
+    {
+      "word": "dollar",
+      "se_tag": "recon",
+      "freq": 639
+    },
+    {
+      "word": "transfer",
+      "se_tag": "recon",
+      "freq": 638
+    },
+    {
+      "word": "contact",
+      "se_tag": "recon",
+      "freq": 630
+    },
+    {
+      "word": "foreign",
+      "se_tag": "recon",
+      "freq": 615
+    },
+    {
+      "word": "next",
+      "se_tag": "recon",
+      "freq": 596
+    },
+    {
+      "word": "assistance",
+      "se_tag": "recon",
+      "freq": 542
+    },
+    {
+      "word": "kin",
+      "se_tag": "recon",
+      "freq": 536
+    },
+    {
+      "word": "email",
+      "se_tag": "recon",
+      "freq": 525
+    },
+    {
+      "word": "also",
+      "se_tag": "recon",
+      "freq": 502
+    },
+    {
+      "word": "reply",
+      "se_tag": "recon",
+      "freq": 501
+    },
+    {
+      "word": "sum",
+      "se_tag": "recon",
+      "freq": 499
+    },
+    {
+      "word": "africa",
+      "se_tag": "recon",
+      "freq": 493
+    },
+    {
+      "word": "late",
+      "se_tag": "recon",
+      "freq": 487
+    },
+    {
+      "word": "father",
+      "se_tag": "recon",
+      "freq": 470
+    },
+    {
+      "word": "year",
+      "se_tag": "recon",
+      "freq": 464
+    },
+    {
+      "word": "family",
+      "se_tag": "recon",
+      "freq": 455
+    },
+    {
+      "word": "security",
+      "se_tag": "recon",
+      "freq": 444
+    },
+    {
+      "word": "claim",
+      "se_tag": "recon",
+      "freq": 439
+    },
+    {
+      "word": "since",
+      "se_tag": "recon",
+      "freq": 436
+    },
+    {
+      "word": "get",
+      "se_tag": "recon",
+      "freq": 435
+    },
+    {
+      "word": "know",
+      "se_tag": "recon",
+      "freq": 429
+    },
+    {
+      "word": "one",
+      "se_tag": "recon",
+      "freq": 424
+    },
+    {
+      "word": "want",
+      "se_tag": "recon",
+      "freq": 423
+    },
+    {
+      "word": "amount",
+      "se_tag": "recon",
+      "freq": 421
+    },
+    {
+      "word": "united",
+      "se_tag": "recon",
+      "freq": 412
+    },
+    {
+      "word": "died",
+      "se_tag": "recon",
+      "freq": 408
+    },
+    {
+      "word": "mail",
+      "se_tag": "recon",
+      "freq": 403
+    },
+    {
+      "word": "state",
+      "se_tag": "recon",
+      "freq": 396
+    },
+    {
+      "word": "investment",
+      "se_tag": "recon",
+      "freq": 375
+    },
+    {
+      "word": "regard",
+      "se_tag": "recon",
+      "freq": 368
+    },
+    {
+      "word": "address",
+      "se_tag": "recon",
+      "freq": 363
+    },
+    {
+      "word": "government",
+      "se_tag": "recon",
+      "freq": 358
+    },
+    {
+      "word": "death",
+      "se_tag": "recon",
+      "freq": 356
+    },
+    {
+      "word": "name",
+      "se_tag": "recon",
+      "freq": 354
+    },
+    {
+      "word": "partner",
+      "se_tag": "recon",
+      "freq": 351
+    },
+    {
+      "word": "client",
+      "se_tag": "recon",
+      "freq": 347
+    },
+    {
+      "word": "dear",
+      "se_tag": "recon",
+      "freq": 345
+    },
+    {
+      "word": "immediately",
+      "se_tag": "recon",
+      "freq": 345
+    },
+    {
+      "word": "help",
+      "se_tag": "recon",
+      "freq": 344
+    },
+    {
+      "word": "com",
+      "se_tag": "recon",
+      "freq": 342
+    },
+    {
+      "word": "bank",
+      "se_tag": "phishing",
+      "freq": 5545
+    },
+    {
+      "word": "account",
+      "se_tag": "phishing",
+      "freq": 5337
+    },
+    {
+      "word": "money",
+      "se_tag": "phishing",
+      "freq": 4830
+    },
+    {
+      "word": "fund",
+      "se_tag": "phishing",
+      "freq": 4218
+    },
+    {
+      "word": "transaction",
+      "se_tag": "phishing",
+      "freq": 3108
+    },
+    {
+      "word": "next",
+      "se_tag": "phishing",
+      "freq": 2819
+    },
+    {
+      "word": "kin",
+      "se_tag": "phishing",
+      "freq": 2677
+    },
+    {
+      "word": "business",
+      "se_tag": "phishing",
+      "freq": 2579
+    },
+    {
+      "word": "transfer",
+      "se_tag": "phishing",
+      "freq": 2337
+    },
+    {
+      "word": "number",
+      "se_tag": "phishing",
+      "freq": 2281
+    },
+    {
+      "word": "country",
+      "se_tag": "phishing",
+      "freq": 2281
+    },
+    {
+      "word": "million",
+      "se_tag": "phishing",
+      "freq": 2238
+    },
+    {
+      "word": "please",
+      "se_tag": "phishing",
+      "freq": 2238
+    },
+    {
+      "word": "name",
+      "se_tag": "phishing",
+      "freq": 2057
+    },
+    {
+      "word": "foreign",
+      "se_tag": "phishing",
+      "freq": 2043
+    },
+    {
+      "word": "contact",
+      "se_tag": "phishing",
+      "freq": 1914
+    },
+    {
+      "word": "dollar",
+      "se_tag": "phishing",
+      "freq": 1806
+    },
+    {
+      "word": "claim",
+      "se_tag": "phishing",
+      "freq": 1762
+    },
+    {
+      "word": "address",
+      "se_tag": "phishing",
+      "freq": 1738
+    },
+    {
+      "word": "company",
+      "se_tag": "phishing",
+      "freq": 1715
+    },
+    {
+      "word": "fax",
+      "se_tag": "phishing",
+      "freq": 1645
+    },
+    {
+      "word": "email",
+      "se_tag": "phishing",
+      "freq": 1597
+    },
+    {
+      "word": "sum",
+      "se_tag": "phishing",
+      "freq": 1439
+    },
+    {
+      "word": "reply",
+      "se_tag": "phishing",
+      "freq": 1417
+    },
+    {
+      "word": "private",
+      "se_tag": "phishing",
+      "freq": 1369
+    },
+    {
+      "word": "one",
+      "se_tag": "phishing",
+      "freq": 1353
+    },
+    {
+      "word": "information",
+      "se_tag": "phishing",
+      "freq": 1346
+    },
+    {
+      "word": "telephone",
+      "se_tag": "phishing",
+      "freq": 1332
+    },
+    {
+      "word": "since",
+      "se_tag": "phishing",
+      "freq": 1315
+    },
+    {
+      "word": "also",
+      "se_tag": "phishing",
+      "freq": 1300
+    },
+    {
+      "word": "foreigner",
+      "se_tag": "phishing",
+      "freq": 1285
+    },
+    {
+      "word": "want",
+      "se_tag": "phishing",
+      "freq": 1279
+    },
+    {
+      "word": "mail",
+      "se_tag": "phishing",
+      "freq": 1239
+    },
+    {
+      "word": "assistance",
+      "se_tag": "phishing",
+      "freq": 1193
+    },
+    {
+      "word": "year",
+      "se_tag": "phishing",
+      "freq": 1138
+    },
+    {
+      "word": "family",
+      "se_tag": "phishing",
+      "freq": 1131
+    },
+    {
+      "word": "died",
+      "se_tag": "phishing",
+      "freq": 1131
+    },
+    {
+      "word": "government",
+      "se_tag": "phishing",
+      "freq": 1128
+    },
+    {
+      "word": "confidential",
+      "se_tag": "phishing",
+      "freq": 1085
+    },
+    {
+      "word": "africa",
+      "se_tag": "phishing",
+      "freq": 1077
+    },
+    {
+      "word": "shall",
+      "se_tag": "phishing",
+      "freq": 1074
+    },
+    {
+      "word": "know",
+      "se_tag": "phishing",
+      "freq": 1070
+    },
+    {
+      "word": "document",
+      "se_tag": "phishing",
+      "freq": 1060
+    },
+    {
+      "word": "united",
+      "se_tag": "phishing",
+      "freq": 1057
+    },
+    {
+      "word": "late",
+      "se_tag": "phishing",
+      "freq": 1054
+    },
+    {
+      "word": "beneficiary",
+      "se_tag": "phishing",
+      "freq": 1051
+    },
+    {
+      "word": "state",
+      "se_tag": "phishing",
+      "freq": 1050
+    },
+    {
+      "word": "immediately",
+      "se_tag": "phishing",
+      "freq": 1050
+    },
+    {
+      "word": "come",
+      "se_tag": "phishing",
+      "freq": 1042
+    },
+    {
+      "word": "security",
+      "se_tag": "phishing",
+      "freq": 1036
+    },
+    {
+      "word": "money",
+      "se_tag": "malware",
+      "freq": 380
+    },
+    {
+      "word": "account",
+      "se_tag": "malware",
+      "freq": 349
+    },
+    {
+      "word": "fund",
+      "se_tag": "malware",
+      "freq": 291
+    },
+    {
+      "word": "transaction",
+      "se_tag": "malware",
+      "freq": 262
+    },
+    {
+      "word": "bank",
+      "se_tag": "malware",
+      "freq": 244
+    },
+    {
+      "word": "company",
+      "se_tag": "malware",
+      "freq": 244
+    },
+    {
+      "word": "country",
+      "se_tag": "malware",
+      "freq": 235
+    },
+    {
+      "word": "please",
+      "se_tag": "malware",
+      "freq": 220
+    },
+    {
+      "word": "million",
+      "se_tag": "malware",
+      "freq": 213
+    },
+    {
+      "word": "assistance",
+      "se_tag": "malware",
+      "freq": 209
+    },
+    {
+      "word": "transfer",
+      "se_tag": "malware",
+      "freq": 193
+    },
+    {
+      "word": "family",
+      "se_tag": "malware",
+      "freq": 193
+    },
+    {
+      "word": "contact",
+      "se_tag": "malware",
+      "freq": 190
+    },
+    {
+      "word": "email",
+      "se_tag": "malware",
+      "freq": 188
+    },
+    {
+      "word": "government",
+      "se_tag": "malware",
+      "freq": 176
+    },
+    {
+      "word": "deposit",
+      "se_tag": "malware",
+      "freq": 173
+    },
+    {
+      "word": "security",
+      "se_tag": "malware",
+      "freq": 169
+    },
+    {
+      "word": "document",
+      "se_tag": "malware",
+      "freq": 168
+    },
+    {
+      "word": "business",
+      "se_tag": "malware",
+      "freq": 153
+    },
+    {
+      "word": "late",
+      "se_tag": "malware",
+      "freq": 151
+    },
+    {
+      "word": "address",
+      "se_tag": "malware",
+      "freq": 143
+    },
+    {
+      "word": "sum",
+      "se_tag": "malware",
+      "freq": 143
+    },
+    {
+      "word": "death",
+      "se_tag": "malware",
+      "freq": 141
+    },
+    {
+      "word": "dollar",
+      "se_tag": "malware",
+      "freq": 139
+    },
+    {
+      "word": "foreign",
+      "se_tag": "malware",
+      "freq": 137
+    },
+    {
+      "word": "father",
+      "se_tag": "malware",
+      "freq": 133
+    },
+    {
+      "word": "contract",
+      "se_tag": "malware",
+      "freq": 132
+    },
+    {
+      "word": "name",
+      "se_tag": "malware",
+      "freq": 127
+    },
+    {
+      "word": "want",
+      "se_tag": "malware",
+      "freq": 126
+    },
+    {
+      "word": "africa",
+      "se_tag": "malware",
+      "freq": 126
+    },
+    {
+      "word": "would",
+      "se_tag": "malware",
+      "freq": 123
+    },
+    {
+      "word": "south",
+      "se_tag": "malware",
+      "freq": 118
+    },
+    {
+      "word": "nigeria",
+      "se_tag": "malware",
+      "freq": 111
+    },
+    {
+      "word": "since",
+      "se_tag": "malware",
+      "freq": 107
+    },
+    {
+      "word": "shall",
+      "se_tag": "malware",
+      "freq": 106
+    },
+    {
+      "word": "also",
+      "se_tag": "malware",
+      "freq": 104
+    },
+    {
+      "word": "kin",
+      "se_tag": "malware",
+      "freq": 103
+    },
+    {
+      "word": "year",
+      "se_tag": "malware",
+      "freq": 101
+    },
+    {
+      "word": "know",
+      "se_tag": "malware",
+      "freq": 100
+    },
+    {
+      "word": "next",
+      "se_tag": "malware",
+      "freq": 98
+    },
+    {
+      "word": "confidential",
+      "se_tag": "malware",
+      "freq": 97
+    },
+    {
+      "word": "share",
+      "se_tag": "malware",
+      "freq": 94
+    },
+    {
+      "word": "investment",
+      "se_tag": "malware",
+      "freq": 94
+    },
+    {
+      "word": "husband",
+      "se_tag": "malware",
+      "freq": 94
+    },
+    {
+      "word": "com",
+      "se_tag": "malware",
+      "freq": 92
+    },
+    {
+      "word": "get",
+      "se_tag": "malware",
+      "freq": 92
+    },
+    {
+      "word": "safe",
+      "se_tag": "malware",
+      "freq": 91
+    },
+    {
+      "word": "approved",
+      "se_tag": "malware",
+      "freq": 90
+    },
+    {
+      "word": "europe",
+      "se_tag": "malware",
+      "freq": 90
+    },
+    {
+      "word": "claim",
+      "se_tag": "malware",
+      "freq": 89
+    }
+  ]
 }

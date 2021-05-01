@@ -21,7 +21,7 @@ D3 visualization
 * unemployment.html
 ```
 
-<img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/unemployment.png" width = "600px" height = "400px" style = "float:left">
+<img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/unemployment.png" width = "600px" height = "600px" style = "float:left">
 
 
 ### Time Heatmap
@@ -32,7 +32,7 @@ D3 visualization
 * day_hour.html
 ```
 
-<img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/heatmap.png" width = "600px" height = "400px" style = "float:left">
+<img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/heatmap.png" width = "600px" height = "600px" style = "float:left">
 
 ### Bubble Chart Content
 - Most common words extracted from the fraud email messages grouped by our social engineering tags from Assignment 1.
@@ -42,7 +42,7 @@ D3 visualization
 * bubble_se.html
 ```
 
-<img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/bubble_chart.png" width = "600px" height = "400px" style = "float:left">
+<img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/bubble_chart.png" width = "600px" height = "g00px" style = "float:left">
 
 ### Attacker Titles
 - All attacker titles and their frequencies
@@ -52,7 +52,7 @@ D3 visualization
 * titles.html
 ```
 
-<img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/titles.png" width = "600px" height = "400px" style = "float:left">
+<img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/attacker_titles.png" width = "600px" height = "g00px" style = "float:left">
 
 
 

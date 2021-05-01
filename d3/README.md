@@ -18,16 +18,41 @@ D3 visualization
 - Multi-line chart with hover labels for each country over 2003-2007
 ```
 * unemployment_final.json
-* open unemployment.html in your browser
+* unemployment.html
 ```
 
-
 <img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/unemployment.png" width = "600px" height = "400px" style = "float:left">
-<img src="https://github.com/dongnizh/tika-img-similarity/blob/refactor/snapshots/interactive-cluster.png" width = "200px" height = "200px" style = "float:right">
 
 
+### Time Heatmap
+- Extracted sent email timestamps and constructed a heatmap of the frequencies of sent emails.
+- Heatmap of cross frequencies (day of week vs. time of day)
+```
+* day_hour_final.json
+* day_hour.html
+```
 
+<img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/heatmap.png" width = "600px" height = "400px" style = "float:left">
 
+### Bubble Chart Content
+- Most common words extracted from the fraud email messages grouped by our social engineering tags from Assignment 1.
+- Non-interactive bubble chart 
+```
+* text.json
+* bubble_se.html
+```
+
+<img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/bubble_chart.png" width = "600px" height = "400px" style = "float:left">
+
+### Attacker Titles
+- All attacker titles and their frequencies
+- Circular barplot 
+```
+* titles.json
+* titles.html
+```
+
+<img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/titles.png" width = "600px" height = "400px" style = "float:left">
 
 
 

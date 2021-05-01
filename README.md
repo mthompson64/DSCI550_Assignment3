@@ -6,7 +6,7 @@ Team Banana
    - [X] You may need to write scripts to summarize your data for D3. As a start,
 consider using ETLlib (http://github.com/chrismattmann/etllib) and its
 tsvtojson tool.
-- [ ] Pick 5 visualization types from https://github.com/d3/d3/wiki/Gallery and create
+- [X] Pick 5 visualization types from https://github.com/d3/d3/wiki/Gallery and create
 the associated Data Insights web pages and associated JSON data to display them
 showing off your dataset (see Task 1). Consider similarity, consider using the
 questions from Assignment 1 and Assignment 2 that you answered in your reports
@@ -30,7 +30,7 @@ into Image Space using the provided instructions and scripts or the ones
 you write on your own using Tika-Python.
   - [X] Browse and find similar images and use the ImageSpace search index and
 search the Image forensics and similarity (SMQTK).
-- [ ] Submit your Solr or ElasticSearch index by tarring it up and gzipping it. Both
+- [X] Submit your Solr or ElasticSearch index by tarring it up and gzipping it. Both
 your index for your scientist data along with your ImageCat indices.
 - [X] Install MEMEX GeoParser and run it against your TSV data and location data
 from assignment 1 and 2.

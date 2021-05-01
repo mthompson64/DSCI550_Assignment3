@@ -1,0 +1,11 @@
+json
+pandas
+numpy
+re
+nltk
+nltk.corpus
+typing
+math
+pysolr
+requests
+tqdm.notebook

@@ -22,7 +22,7 @@ D3 visualization
 ```
 
 
-<img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/unemployment.png" width = "400px" height = "200px" style = "float:left">
+<img src="https://github.com/mthompson64/DSCI550_Assignment3/blob/main/d3/unemployment.png" width = "600px" height = "400px" style = "float:left">
 <img src="https://github.com/dongnizh/tika-img-similarity/blob/refactor/snapshots/interactive-cluster.png" width = "200px" height = "200px" style = "float:right">
 
 
